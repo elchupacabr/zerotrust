@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Metrognome</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="metrognome">
+  <div class="gnome">
+    <div class="hat"></div>
+    <div class="beard">
+      <div class="stache left"></div>
+      <div class="stache right"></div>
+    </div>
+    <div class="nose"></div>
+    <div class="mouth"></div>
+  </div>
+</div>
+
+<div class="controls">
+  <input type="range" id="tempo" name="tempo" min="40" max="218" value="120">
+  <label for="tempo"><span id="bpm">120</span> bpm</label>
+  <button id="play">Play</button>
+</div>
+<!-- partial -->
+  <script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
