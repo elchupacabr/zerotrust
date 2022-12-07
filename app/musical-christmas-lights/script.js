@@ -116,9 +116,9 @@ function loadAudio(i) {
     "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Dott/This_Christmas/Dott_-_01_-_This_Christmas.mp3",
     "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/ccCommunity/TRG_Banks/TRG_Banks_Christmas_Album/TRG_Banks_-_12_-_No_room_at_the_inn.mp3",
     "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/ccCommunity/Mark_Smeby/En_attendant_Nol/Mark_Smeby_-_07_-_Jingle_Bell_Swing.mp3",
-    "https://flyandflake.github.io/rafik/src/audio/bobby-helms-jingle-bell-rock.mp3",
-	"https://flyandflake.github.io/rafik/src/audio/dean-martin-let-it-snow.mp3",
-	"https://pub0202.101.ru:8443/stream/reg/mp3/128/region_energy_98",
+    "https://flyandflake.github.io/zerotrust/src/audio/bobby-helms-jingle-bell-rock.mp3",
+	"https://flyandflake.github.io/zerotrust/src/audio/dean-martin-let-it-snow.mp3",
+	"https://flyandflake.github.io/zerotrust/src/audio/ljapis_trubeckoj_-_kapital_(z2.fm).mp3",
       ];
   const file = files[i];
 
