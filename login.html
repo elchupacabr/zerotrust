@@ -1,9 +1,3 @@
-<?php
-/*
-Author: Javed Ur Rehman
-Website: http://www.allphptricks.com/
-*/
-?>
 <!DOCTYPE html>
 <html>
 
@@ -22,42 +16,7 @@ Website: http://www.allphptricks.com/
 </head>
 
 <body>
-	<?php
-	require_once('db.php');
-	require_once('loadphoto.php');
-	session_start();
-	// If form submitted, insert values into the database.
-	if (isset($_POST['username'])) {
-
-		$username = stripslashes($_REQUEST['username']); // removes backslashes
-		$username = mysqli_real_escape_string($con, $username); //escapes special characters in a string
-		$password = stripslashes($_REQUEST['password']);
-		$password = mysqli_real_escape_string($con, $password);
-	    
-		//Checking is user existing in the database or not
-		$query = "SELECT * FROM `users` WHERE username='$username' and password='" . md5($password) . "'";
-		$result = mysqli_query($con, $query) or die(mysql_error());
-		$rows = mysqli_num_rows($result);
-	while($img = mysqli_fetch_assoc($result)){
-		$_SESSION['id'] = $img['id'];
-		$_SESSION['img'] = $img['img'];
-	
-}
-
-		if ($rows == 1) {
-			$_SESSION['username'] = $username;
-			
-			header("Location: /"); // Redirect user to index.php
-		} else {
-			header("Refresh: 1; url=/login");
-				
-				$erorrtext = "Username/password is incorrect.";
-				$_SESSION['erorrr'] = $erorrtext;
-		}
-	} else {
-	?>
-
-
+	 
  <!-- partial:index.partial.html -->
 <button class="block" name="theme"></button>
 <script src="./js/infinity.js"></script>
@@ -66,7 +25,7 @@ Website: http://www.allphptricks.com/
 		<div class="screen__content">
 			
 			
-			<form class="login" method="post" action="/core/login.php">
+			<form class="login" action="index.html">
 				<div class="login__field">
 					<i class="login__icon fas fa-user"></i>
 					<input type="text" name="username" class="login__input" placeholder="User name / Email">
@@ -104,7 +63,7 @@ Website: http://www.allphptricks.com/
 		<div class="screen__content" >
 			
 			
-			<form class="register" method = "POST" action="/core/reg.php">
+			<form class="register" action="index.html">
 			<div class="register__field">
 					<i class="register__icon fas fa-user"></i>
 					<input type="text" name="username" class="register__input" placeholder="User name / Email">
@@ -150,7 +109,7 @@ window.onclick = function(event) {
 }
 </script>
 
-<?php } ?>
+ 
 </body>
 
 </html>
