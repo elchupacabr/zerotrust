@@ -1,0 +1,21 @@
+Options -Indexes
+Options +FollowSymlinks
+
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}/.php -f
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+
+RewriteRule ^(.*)/?$ $1.php
+
+#ЯДРО
+RewriteRule ^login/?$ core/login.php [L,QSA]
+RewriteRule ^404/?$ core/404.php [L,QSA]
+RewriteRule ^reg/?$ core/reg.php [L,QSA]
+
+RewriteRule ^services/?$ core/services.php [L,QSA]
+RewriteRule ^about/?$ core/about.php [L,QSA]
+RewriteRule ^logout/?$ core/logout.php [L,QSA]
+#RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+ErrorDocument 404 https://rafik.ru/404

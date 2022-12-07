@@ -1,0 +1,372 @@
+﻿<?php
+/*
+Author: Javed Ur Rehman
+Website: http://www.allphptricks.com/
+*/
+
+include_once("core/auth.php"); //include auth.php file on all secure pages
+require_once 'core/loadphoto.php';
+
+session_start();
+
+ ?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rafik.Ru</title>
+  <link rel="shortcut icon" href="./favicon.ico">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="./css/custom-fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/effects-min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <section class="preloader"> 
+ 
+ <div class="spinner al">
+  <img src="./img/qwerty.png" alt="" class="spin">
+ </div>
+ <p><i>Loading...</i></p>
+ 
+</section>
+<!-- partial -->
+<script  src="./js/load.js"></script>
+
+
+  <header>
+    <nav class="cd-stretchy-nav">
+      <a class="cd-nav-trigger" href="#0">
+
+        <span aria-hidden="true"></span>
+      </a>
+
+      <ul>
+        <li><a href="/" class="active"><span class="fix-style">Home</span></a></li>
+        <li><a href="/dashboard.php"><span class="fix-style">Portfolio</span></a></li>
+        <li><a href="/services"><span class="fix-style">Services</span></a></li>
+        <li><a href="#app"><span class="fix-style">Store</span></a></li>
+        <li><a href="/about"><span class="fix-style">About</span></a></li>
+      </ul>
+
+      <span aria-hidden="true" class="stretchy-nav-bg"></span>
+    </nav>
+    <div class="dropdown"><img class="img-set" src="img/profiles_photos/small_img/<?= $_SESSION['img'] ?>">
+      <button class="dropbtn" onclick="(document.getElementById('droper').style.display='block')"></button>
+      <div class="dropdown-content" id="droper">
+        <form action="" method="post" enctype="multipart/form-data">
+
+          <div class="input__wrapper">
+            <input type="file" name="uploadfile" id="input__file" class="input input__file">
+            <label for="input__file" class="input__file-button">
+              <span class="input__file-icon-wrapper"><img class="input__file-icon" src="./img/add.svg"
+                  alt="Выбрать файл" width="25"></span>
+              <span class="input__file-button-text">Выберите файл</span>
+          </div>
+          <div class="input__wrapper_l">
+            <input type="submit" name="upload" id="input__load" class="input input__load">
+            <label for="input__load" class="input__load-button">
+              <span class="input__load-icon-wrapper"><img class="input__load-icon" src="./img/add.svg"
+                  alt="Загрузить файл" width="25"></span>
+              <span class="input__load-button-text">Загрузить</span>
+          </div>
+
+        </form>
+        <div class="input__wrapper">
+          <a href="/logout">Выйти из профиля</a>
+        </div>
+        <div class="cl" onclick="(document.getElementById('droper').style.display='none')">&times;</div>
+      </div>
+    </div>
+
+    <script src="./js/jquery-2.1.4.js"></script>
+    <script src="./js/main.js"></script>
+
+    <a href="/">
+      <div class="header-title"><img class="header-banner" src="./img/bunny.png" alt="">Rafik.Ru</div>
+    </a>
+    <form class="header-search">
+     <button class="search-btn" type="submit"><i
+          class="icons icons-xl myicons-search"></i></button>
+    </form>
+    <nav class="cd-stretchy-nav add-content">
+      <a class="cd-nav-trigger" href="#0">
+
+        <span aria-hidden="true"></span>
+      </a>
+
+      <ul>
+        <li><a href="#0"><span>Image</span></a></li>
+        <li><a href="#0"><span>Audio</span></a></li>
+        <li><a href="./app/musical-christmas-lights/index.html"><span>Link</span></a></li>
+        <li><a href="#"><span>Game</span></a></li>
+      </ul>
+
+      <span aria-hidden="true" class="stretchy-nav-bg"></span>
+    </nav>
+    <div class="toggle"></div>
+    <script>
+      $(function () {
+        $('.toggle').on('click', function (event) {
+          $(this).toggleClass('active');
+          $('body').toggleClass('night');
+        });
+      });
+    </script>
+  <div class="settings" onclick="myFunction()"><i class="fa fa-cog" id="set"></i></div>
+  </header>
+  <section class="area">
+    <div class="area-content">
+      <div class="container">
+        <video src="./src/65438.mp4" controls autoplay loop></video>
+        <video src="./src/Китайский_витас.mp4" controls></video>
+      </div>
+      <div class="headerl">
+        <!--Waves Container-->
+        <div>
+          <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+              <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallaxl">
+              <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+              <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+              <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+              <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+            </g>
+          </svg>
+        </div>
+        <!--Waves end-->
+      </div>
+      <!--Header ends-->
+      <!--Content starts-->
+      <!--Content ends-->
+    </div>
+    <!-- partial -->
+    <!-- partial -->
+    <!-- partial -->
+    <!-- partial -->
+    <!-- partial -->
+    <!-- partial -->
+  </section>
+   <!----><!----> <!----><!----> <!----><!----> <!----><!---->
+  <hr id="y-end">
+
+  <div class="change">
+    <div class="arrow-scroll">
+      <div class="arrow-scroll__wrap arrow-scroll__wrap_animated">
+        <svg style="fill:#ffffff;" x="0px" y="0px" width="38.417px" height="18.592px" viewbox="0 0 38.417 18.592">
+          <g>
+            <path
+              d="M19.208,18.592c-0.241,0-0.483-0.087-0.673-0.261L0.327,1.74c-0.408-0.372-0.438-1.004-0.066-1.413c0.372-0.409,1.004-0.439,1.413-0.066L19.208,16.24L36.743,0.261c0.411-0.372,1.042-0.342,1.413,0.066c0.372,0.408,0.343,1.041-0.065,1.413L19.881,18.332C19.691,18.505,19.449,18.592,19.208,18.592z">
+            </path>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $(document).ready(function () {
+      function scrollToElement(element, parent) {
+        $(parent)[0].scrollIntoView(true);
+        $(parent).animate({
+          scrollTop: $(parent).scrollTop() + $(element).offset().top - $(parent).offset().top
+        }, {
+          duration: 'slow',
+          easing: 'swing'
+        });
+      }
+      //call animated scroll script on click of 2nd button
+      $('.change').on('click', function () {
+        var paretq = $('#parallax');
+        var elemq = $('#y-end');
+        scrollToElement(elemq, paretq);
+      })
+    })
+  </script>
+  <!----><!----> <!----><!----> <!----><!---->
+  <div class="slider-container" id="main">
+    <div class="slider-control left inactive"></div>
+  <div class="slider-control right"></div>
+  <ul class="slider-pagi"></ul>
+  <div class="slider">
+    <div class="slide slide-0 active">
+      <div class="slide__bg"></div>
+      <div class="slide__content">
+        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+          <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+        </svg>
+        <div class="slide__text">
+          <h2 class="slide__text-heading">Добро пожаловать <?php echo $_SESSION['username']; ?></h2>
+          <p class="slide__text-desc" id="loremtext">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo ipsa dolorem quasi inventore consectetur soluta velit, cumque, officiis libero, fugiat culpa ipsum exercitationem ad id. Eum optio praesentium error modi.</p>
+          <p class="slide__text-desc" id="hiddentext">Если клиент очень умный, он сможет добиться желаемого результата. Никто не хочет освободиться от страданий, как если бы он был изобретателем, даже если, освободившись от обязанностей, он избегает самого проявления вины. Его выбор настоящего — ошибка.</p>
+          <a class="slide__text-link" id="special-link" href="/logout">Выйти</a>
+        </div>
+      </div>
+    </div>
+    <div class="slide slide-1 ">
+      <div class="slide__bg"></div>
+      <div class="slide__content">
+        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+          <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+        </svg>
+        <div class="slide__text">
+          <h2 class="slide__text-heading">О нас</h2>
+          <p class="slide__text-desc"><!--Находимся по адресу: South Korea, 부천시 오정구, 702 역삼로-->
+            Находимся по адресу: г. Ростов-На-Дону, Проспект Ленина, 210 <br>
+            Главное управление Штаб-квартира: Свердловская область,<br>
+            г. Екатеринбург, Чкаловский район, ул. Титова 11
+          </p>
+          <a class="slide__text-link" href="">Посмотреть на карте</a>
+        </div>
+      </div>
+    </div>
+    <div class="slide slide-2">
+      <div class="slide__bg"></div>
+      <div class="slide__content">
+        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+          <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+        </svg>
+        <div class="slide__text">
+          <h2 class="slide__text-heading">Контакты</h2>
+          <p class="slide__text-desc" id="link">
+            
+              <i class="fa fa-vk" id="vk_logo"></i>VK: <a href="http://vk.com/flyandflake">@flyandflake</a><br>
+              <i class="fa fa-instagram" id="insta_logo"></i>Instagram: <a href="http://instagram.com/flyandflake">@flyandflake</a><br>
+              <i class="fa fa-whatsapp" id="wapp_logo"></i> WhatsApp: <a href="https://api.whatsapp.com/send&phone=+380721703129">065-3387-2591</a> <br>
+              <i class="fa fa-phone" id="tel_logo"></i>  Лугаком: 065-3387-2591 <br>
+            
+          </p>
+          <a class="slide__text-link" href="/about">Подробнее</a>
+        </div>
+      </div>
+    </div>
+    <div class="slide slide-3">
+      <div class="slide__bg"></div>
+      <div class="slide__content">
+        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+          <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+        </svg>
+        <div class="slide__text">
+          <h2 class="slide__text-heading">Автор: <i class="fa fa-github" id="github"></i>flyandflake</h2>
+          <p class="slide__text-desc" id="loremtext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p>
+          <a class="slide__text-link" id="special-link" href="#top">$Donate</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="./js/script.js"></script>
+  <!-- partial -->
+ 
+  <!-- partial:index.partial -->
+  <div class="block" id="parallax">
+    <img src="https://unsplash.it/1920/1920/?image=1005" data-speed="-1" class="img-parallax">
+    <h2>Parallax Speed -1</h2>
+  </div>
+  <div class="block">
+    <img src="https://unsplash.it/1920/1920/?image=1067" data-speed="1" class="img-parallax">
+    <h2>Parallax Speed 1</h2>
+  </div>
+  <div class="block">
+    <img src="https://unsplash.it/1920/1920/?gravity=center" data-speed="-0.25" class="img-parallax">
+    <h2>Parallax Speed -0.25</h2>
+  </div>
+  <div class="block">
+    <img src="https://unsplash.it/1920/1920/?image=1080" data-speed="0.25" class="img-parallax" id="filter">
+    <h2>Parallax Speed 0.25</h2>
+  </div>
+  <div class="block" >
+    <img src="https://unsplash.it/1920/1920/?random" data-speed="-0.75" class="img-parallax" id="early">
+    <h2>Parallax Speed -0.75</h2>
+  </div>
+  <div class="block">
+    <img src="https://unsplash.it/1920/1920/?blur" data-speed="0.75" class="img-parallax" id="each" >
+    <h2>Parallax Speed 0.75</h2>
+  </div>
+  <!-- partial -->
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+  <script src="./js/parallax.js"></script>
+
+  <div class="snowflakes" aria-hidden="true" id="switcher">
+
+    <!---->
+    <div class="snowflake">
+      ❅
+    </div>
+    <div class="snowflake">
+      ❆
+    </div>
+    <div class="snowflake">
+      ❅
+    </div>
+    <div class="snowflake">
+      ❆
+    </div>
+    <div class="snowflake">
+      ❅
+    </div>
+    <div class="snowflake">
+      ❆
+    </div>
+    <div class="snowflake">
+      ❅
+    </div>
+    <div class="snowflake">
+      ❆
+    </div>
+    <div class="snowflake">
+      ❅
+    </div>
+    <div class="snowflake">
+      ❆
+    </div>
+    <div class="snowflake">
+      ❅
+    </div>
+    <div class="snowflake">
+      ❆
+    </div>
+    <!---->
+    <!--
+    <div class="snowflake" id="black"></div>
+    <div class="snowflake" id="free"></div>
+    <div class="snowflake" id="red"></div>
+    <div class="snowflake" id="tree"></div>
+    <div class="snowflake" id="fly"></div>
+    <div class="snowflake" id="black"></div>
+    <div class="snowflake" id="red"></div>
+    <div class="snowflake" id="free"></div>
+    <div class="snowflake" id="tree"></div>
+    <div class="snowflake" id="fly"></div>
+  </div> -->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("switcher");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+
+        } else {
+          x.style.display = "none";
+        }
+      }
+    </script>
+    <footer>Copyriht All Rights Reserved - 2022 Rafik.ru</footer>
+</body>
+
+</html>
