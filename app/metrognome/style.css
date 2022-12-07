@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  --color-bg: #1d1e22;
+  --color-text: hsl(0 0% 90%);
+  --color-face: #ecc4ab;
+  --color-hat: hsl(120 25% 45%);
+  --color-beard: var(--color-text);
+  --radius: 360px;
+
+  display: grid;
+  place-items: center;
+  place-content: center;
+  gap: 10vmin;
+  font-family: "Roboto Mono", monospace;
+  font-size: clamp(1rem, 3vw, 1.25rem);
+  text-transform: uppercase;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+[id="metrognome"] {
+  --size: 50vmin;
+  --deg: 15deg;
+
+  padding-bottom: calc(var(--size) / 2);
+  -webkit-margin-after: calc(var(--size) / -2);
+          margin-block-end: calc(var(--size) / -2);
+  transform-origin: 50% 100%;
+  pointer-events: none;
+}
+
+.gnome {
+  display: grid;
+  grid-template-areas: "gnome";
+  place-items: center;
+  inline-size: var(--size);
+  block-size: var(--size);
+}
+
+.gnome > * {
+  grid-area: gnome;
+  position: relative;
+}
+
+.hat {
+  --s: calc(var(--size) / 1.25);
+
+  place-self: start center;
+  inset-block-start: calc(var(--size) / 8);
+  inline-size: var(--s);
+  block-size: var(--s);
+  background-color: var(--color-hat);
+  border-radius: calc(var(--size) / 10);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 75% 100%, 0 25%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 75% 100%, 0 25%);
+  transform: rotate(-45deg);
+}
+
+.nose {
+  --s: calc(var(--size) / 4);
+
+  margin-top: -1vmin;
+  inline-size: var(--s);
+  block-size: var(--s);
+  background-color: var(--color-face);
+  border-radius: 50%;
+}
+
+.beard {
+  --s: calc(var(--size) / 2);
+
+  margin-top: 4vmin;
+  place-self: end center;
+  display: flex;
+  align-items: flex-start;
+  inline-size: calc(var(--s) * 2);
+  block-size: var(--s);
+  background-color: var(--color-beard);
+  border-radius: var(--radius);
+  box-shadow: hsla(0 0% 0% / 0.075) 1vmin 1vmin 2vmin -0.5vmin;
+}
+
+.stache {
+  --stache-offset: -3vmin;
+
+  margin-top: var(--stache-offset);
+  inline-size: 100%;
+  block-size: 50%;
+  background-color: inherit;
+  box-shadow: inherit;
+}
+
+.stache.left {
+  margin-left: var(--stache-offset);
+  border-radius: var(--radius) 0 var(--radius) 0;
+  transform-origin: right top;
+}
+
+.stache.right {
+  margin-right: var(--stache-offset);
+  border-radius: 0 var(--radius) 0 var(--radius);
+  transform-origin: left top;
+}
+
+.mouth {
+  --s: calc(var(--size) / 10);
+
+  margin-top: calc(var(--size) / 2.5);
+  inline-size: var(--s);
+  block-size: calc(var(--s) / 2);
+  border-radius: var(--radius);
+  background-color: var(--color-bg);
+  transform-origin: center top;
+  transform: scale(0);
+}
+
+.controls {
+  --gap: 0.5rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--gap);
+  width: 100%;
+  padding: 1rem;
+  max-width: 20rem;
+}
+
+.controls > * {
+  flex: 1 0 calc(50% - var(--gap) * 2);
+}
+
+input[type="range"] {
+  flex-basis: 100%;
+}
+
+label {
+  padding: 0.5rem 0;
+}
+
+button {
+  padding: 0.5rem 1.25rem;
+  min-width: 8.75rem;
+  font: inherit;
+  color: inherit;
+  text-transform: inherit;
+  background: transparent;
+  border: 1px solid var(--color-text);
+  cursor: pointer;
+}
+
+input[type="range"] {
+  --thumb-size: 18px;
+  --thumb-offset: -8px;
+  --track-height: 1px;
+
+  background-color: transparent;
+  padding: 1rem 0;
+  margin: 0;
+  -webkit-appearance: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  height: var(--track-height);
+  background: var(--color-text);
+  border: none;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  margin-top: var(--thumb-offset);
+  width: var(--thumb-size);
+  height: var(--thumb-size);
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-text);
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+input[type="range"]:active::-webkit-slider-thumb {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+input[type="range"]::-moz-range-track {
+  background-color: var(--color-primary);
+  height: var(--track-height);
+  border: none;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: var(--thumb-size);
+  height: var(--thumb-size);
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-text);
+  cursor: grab;
+}
+
+input[type="range"]:active::-moz-range-thumb {
+  cursor: grabbing;
+}
