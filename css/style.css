@@ -1682,18 +1682,7 @@ footer {
   transform: translate(-50%,0);
   pointer-events: none
 }
-#each{
-  background-image: url(../img/ya32/+parus+more+zakat+yahta+97493537474.jpg);
-  background-size: cover;
-}
-#early{
-  background-image: url(../img/ya32/1296482040_F1F2F0E0F8EDE0FF20E0E2E0F0E8FF.jpg);
-  background-size: cover;
-}
-#filter{
-  background-image: url(../img/ya32/13martinkníže-balticsea.jpg);
-  background-size: cover;
-}
+ 
 .no-touch .cd-stretchy-nav.add-content.nav-is-visible ul a:hover span {
   opacity: 1;
   visibility: visible;
