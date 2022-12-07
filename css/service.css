@@ -1,0 +1,21 @@
+.block, .break, .area, .carton, .footer{
+    width: 100px;
+    height: 100px;
+    background-color: #1a2c3d;
+}
+.break{
+    background-color: #ccc;
+}
+.area{
+    background-color: #a1c;
+}
+.carton{
+    background-color: #e1a;
+}
+.footer{
+    background-color: #f22;
+}
+.logo{
+    width: 145px;
+    height: 75px;
+}

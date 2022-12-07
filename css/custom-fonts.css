@@ -1,0 +1,9 @@
+@font-face {
+    font-family: Have Heart One;
+    src: url(../fonts/HaveHeartOne/HaveHeartOne.ttf)
+    format('truetype'),
+    
+    url(../fonts/HaveHeartOne/HaveHeartOne.otf)
+    format('opentype')
+    ;
+}
