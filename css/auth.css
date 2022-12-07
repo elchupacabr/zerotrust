@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;	
+	font-family: Raleway, sans-serif;
+	overflow: hidden;
+}
+
+.block {
+	border: none;
+	float: left;
+	width: 67px;
+	height: 67px;
+	margin-right: 5px;
+	-moz-transition: all 0.8s linear;
+	-webkit-transition: all 0.8s linear;
+	-o-transition: all 0.8s linear;
+	-ms-transition: all 0.8s linear;
+	transition: all 0.8s linear;
+	background-color: transparent;
+background-size: 90%;
+background-repeat: no-repeat;
+	background-image: url(../img/transparent.png);
+	background-position: center;
+	position: fixed;
+	top: 15px;
+	left: 10px;
+	
+
+  }
+
+
+  img {
+	width: 67px;
+	height: 64px;
+	
+  }
+
+  .block:active {
+	-moz-transform: rotate(9720deg);
+	-webkit-transform: rotate(9720deg);
+	-o-transform: rotate(9720deg);
+	-ms-transform: rotate(9720deg);
+	transform: rotate(9720deg);
+
+  }
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+.screen {		
+	background: linear-gradient(90deg, #5D54A4, #7C78B8);		
+	position: relative;	
+	height: 600px;
+	width: 360px;	
+	box-shadow: 0px 0px 24px #5C5696;
+}
+
+.screen__content {
+	z-index: 1;
+	position: relative;	
+	height: 100%;
+}
+
+.screen__background {		
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 0;
+	-webkit-clip-path: inset(0 0 0 0);
+	clip-path: inset(0 0 0 0);	
+}
+
+.screen__background__shape {
+	transform: rotate(45deg);
+	position: absolute;
+}
+
+.screen__background__shape1 {
+	height: 520px;
+	width: 520px;
+	background: #FFF;	
+	top: -50px;
+	right: 120px;	
+	border-radius: 0 72px 0 0;
+}
+
+.screen__background__shape2 {
+	height: 220px;
+	width: 220px;
+	background: #6C63AC;	
+	top: -172px;
+	right: 0;	
+	border-radius: 32px;
+}
+
+
+.screen__background__shape3 {
+	height: 540px;
+	width: 190px;
+	background: linear-gradient(270deg, #5D54A4, #6A679E);
+	top: -24px;
+	right: 0;	
+	border-radius: 32px;
+}
+
+.screen__background__shape4 {
+	height: 400px;
+	width: 200px;
+	background: #7E7BB9;	
+	top: 420px;
+	right: 50px;	
+	border-radius: 60px;
+}
+
+.login {
+	width: 320px;
+	padding: 30px;
+	padding-top: 156px;
+}
+
+.login__field {
+	padding: 20px 0px;	
+	position: relative;	
+}
+
+.login__icon {
+	position: absolute;
+	top: 30px;
+	color: #7875B5;
+}
+
+.login__input {
+	border: none;
+	border-bottom: 2px solid #D1D1D4;
+	background: none;
+	padding: 10px;
+	padding-left: 24px;
+	font-weight: 700;
+	width: 75%;
+	transition: .2s;
+}
+
+.login__input:active,
+.login__input:focus,
+.login__input:hover {
+	outline: none;
+	border-bottom-color: #6A679E;
+}
+
+.login__submit {
+	background: #fff;
+	font-size: 14px;
+	margin-top: 30px;
+	padding: 16px 20px;
+	border-radius: 26px;
+	border: 1px solid #D4D3E8;
+	text-transform: uppercase;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	color: #4C489D;
+	box-shadow: 0px 2px 2px #5C5696;
+	cursor: pointer;
+	transition: .2s;
+}
+
+.login__submit:active,
+.login__submit:focus,
+.login__submit:hover {
+	border-color: #6A679E;
+	outline: none;
+}
+
+.button__icon {
+	font-size: 24px;
+	margin-left: auto;
+	color: #7875B5;
+}
+
+.social-login {	
+	position: absolute;
+	height: 140px;
+	width: 160px;
+	text-align: center;
+	bottom: 0px;
+	right: 0px;
+	color: #fff;
+}
+
+.social-icons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.social-login__icon {
+	padding: 20px 10px;
+	color: #fff;
+	text-decoration: none;	
+	text-shadow: 0px 0px 8px #7875B5;
+}
+
+.social-login__icon:hover {
+	transform: scale(1.5);	
+}
+.reg-link{
+	color: #fff;
+	position: relative;
+	bottom: 0;
+	font-family: Raleway, sans-serif;
+	font-weight: 800;
+	text-decoration: none;
+}
+.reg-link:hover{
+	color: #6A679E;
+}
+.reg{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	font-family: Raleway, sans-serif;
+	z-index: 1;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #000000bf;
+ 
+}
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.register {
+	width: 320px;
+	padding: 30px;
+	padding-top: 110px;
+}
+
+.register__field {
+	padding: 20px 0px;	
+	position: relative;	
+}
+
+.register__icon {
+	position: absolute;
+	top: 30px;
+	color: #08b590;
+}
+
+.register__input {
+	border: none;
+	border-bottom: 2px solid #D1D1D4;
+	background: none;
+	padding: 10px;
+	padding-left: 24px;
+	font-weight: 700;
+	width: 75%;
+	transition: .2s;
+}
+
+.register__input:active,
+.register__input:focus,
+.register__input:hover {
+	outline: none;
+	border-bottom-color: #679e95;
+}
+
+.register__submit {
+	background: #fff;
+	font-size: 14px;
+	margin-top: 30px;
+	padding: 16px 20px;
+	border-radius: 26px;
+	border: 1px solid #D4D3E8;
+	text-transform: uppercase;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	color: #489d8f;
+	box-shadow: 0px 2px 2px #56968b;
+	cursor: pointer;
+	transition: .2s;
+}
+
+.register__submit:active,
+.register__submit:focus,
+.register__submit:hover {
+	border-color: #679e92;
+	outline: none;
+}
+.screen__background__shape1q {
+	height: 520px;
+	width: 520px;
+	background: #FFF;	
+	top: -50px;
+	right: 120px;	
+	border-radius: 0 72px 0 0;
+}
+
+.screen__background__shape2q {
+	height: 220px;
+	width: 220px;
+	background: #63ac9c;	
+	top: -172px;
+	right: 0;	
+	border-radius: 32px;
+}
+
+
+.screen__background__shape3q {
+	height: 540px;
+	width: 190px;
+	background: linear-gradient(270deg, #54a4a0, #679e91);
+	top: -24px;
+	right: 0;	
+	border-radius: 32px;
+}
+
+.screen__background__shape4q {
+	height: 400px;
+	width: 200px;
+	background: #7bb9b4;	
+	top: 420px;
+	right: 50px;	
+	border-radius: 60px;
+}
+.screenq {		
+	background: linear-gradient(90deg,#54a498, #78b8a9);		
+	position: relative;	
+	height: 600px;
+	width: 360px;	
+	box-shadow: 0px 0px 24px #56968d;
+}
