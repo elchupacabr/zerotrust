@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Pacman</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="//cdn.jsdelivr.net/npm/phaser@3.12/dist/phaser.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="social-links">
+      <div id="pacman-banner">Pacman</div>
+      <div class="social-buttons">
+        <a class="twitter-follow-button nav-link" href="https://twitter.com/kudchikarsk" data-show-count="false">
+Follow @kudchikarsk</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container game-container">
+    <canvas id="mycanvas"></canvas>
+  </div>
+
+  <script>
+    window.twttr = (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {};
+      if (d.getElementById(id)) return t;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js, fjs);
+      t._e = [];
+      t.ready = function(f) {
+        t._e.push(f);
+      };
+      return t;
+    }(document, "script", "twitter-wjs"));
+  </script>
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

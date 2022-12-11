@@ -1,0 +1,84 @@
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+#game {
+  position: relative;
+  border: 4px solid black;
+  height: 300px;
+  width: 600px;
+  background: white;
+  z-index: 10;
+}
+
+h1 {
+  font-family: Raleway;
+  font-size: 42px;
+}
+
+.points {
+  position: relative;
+  float: left;
+  font-weight: bold;
+  font-family: Raleway;
+  font-size: 120px;
+  list-style: none;
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+  z-index: 11;
+
+}
+
+#points-container {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  left: 0;
+}
+
+.points .points-title {
+  font-size: 24px;
+}
+
+#user {
+  color: black;
+  left: calc(50% - 460px);
+}
+
+#enemy {
+  color: white;
+  left: calc(50% + 250px);
+}
+
+.container {
+  position: absolute;
+  left: calc(50% - 300px);
+  z-index: 10;
+}
+
+.triangle {
+  width: 0;
+    height: 0;
+    border-top: 15000px solid black;
+    border-left: 5000px solid transparent;
+    margin: 0;
+    left: 44%;
+    position: absolute;
+    z-index: 1;
+}
+
+@media (max-width: 700px) {
+  #points-container {
+    position: relative;
+    float: right;
+    width: 300px;
+    top: 0;
+    height: 100px;
+  }
+}

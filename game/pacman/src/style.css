@@ -1,0 +1,39 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  overflow: hidden;
+  background-color: black;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-links {
+  padding: 5px;
+  width: 560px;
+}
+
+#pacman-banner {
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 21pt;
+  margin-right: 100px;
+  color: yellow;
+  float: left;
+}
+
+.social-buttons {
+  float: right;
+  position: relative;
+  top: 5px;
+}
+
+.game-container {
+  transform: scale(0.7) translateY(-20%);
+}
