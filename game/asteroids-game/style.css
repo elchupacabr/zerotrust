@@ -1,0 +1,334 @@
+body {
+  background-color: #0a0014;
+  overflow: hidden;
+}
+
+a {
+  color: inherit;
+}
+
+li {
+  margin-bottom: 15px;
+}
+
+.game-info {
+  position: absolute;
+  left: 5%;
+  top: 10%;
+  width: 90%;
+  height: 80%;
+  /*background-color: orange;*/
+}
+
+#title {
+  display: normal;
+}
+
+#info {
+  display: none;
+}
+
+.game-element {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.gamefont {
+  color: lightblue;
+  font-family: PressStart2PRegular;
+  font-weight: bold;
+  letter-spacing: -2px;
+  -webkit-filter: blur(1px);
+}
+
+.titlefont {
+  top: 15%;
+  left: 2%;
+  width: 96%;
+  text-align: center;
+  font-size: 80px;
+  letter-spacing: -6px;
+}
+
+.title2font {
+  font-size: 25px;
+  top: 30%;
+}
+
+.startfont {
+  top: 45%;
+  font-size: 50px;
+  width: 220px;
+  left: -110px;
+  text-align: center;
+  margin-left: 50%;
+  letter-spacing: -3px;
+  border: 3px solid lightblue;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.startfont:hover {
+  color: white;
+  border-color: white;
+  transform: scale(0.99, 0.99);
+}
+
+.devfont {
+  top: 80%;
+  width: 80%;
+  left: 10%;
+  text-align: center;
+  font-size: 25px;
+  letter-spacing: -3px;
+}
+
+.devlink {
+  display: inline-block;
+}
+
+.devlink:hover {
+  color: white;
+  border-color: white;
+  transform: scale(0.99, 0.99);
+}
+
+.score {
+  font-size: 45px;
+  left: 50px;
+  top: 20px;
+  text-align: left;
+  z-index: -5;
+}
+
+.star {
+  width: 2px;
+  height: 2px;
+  background-color: white;
+  border-radius: 50%;
+  left: 200px;
+  top: 200px;
+  opacity: 0.8;
+  z-index: -10;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.asteroid {
+  width: 100px;
+  height: 100px;
+  left: 300px;
+  top: 300px;
+  float: left;
+  fill: #141428;
+  stroke: #a0a0a0;
+  stroke-width: 4px;
+  opacity: 1;
+  animation: spin 32s infinite linear;
+  z-index: -9;
+}
+
+.bullet {
+  width: 6px;
+  height: 6px;
+  background: white;
+  border-radius: 50%;
+  left: 100px;
+  top: 150px;
+  opacity: 0.95;
+  z-index: -7;
+}
+
+.player {
+  left: 0px;
+  top: 0px;
+  width: 20px;
+  height: 20px;
+  float: left;
+  fill: lightblue;
+  stroke: white;
+  stroke-width: 2px;
+  opacity: 0.75;
+  z-index: -8;
+}
+
+.exhaust {
+  position: relative;
+  left: -20px;
+  top: -154px;
+  stroke: none;
+  fill: white;
+  opacity: 1;
+  z-index: -8;
+}
+
+/*  CRT effect  */
+@keyframes hard-flicker {
+  0% {
+    opacity: 0.72405;
+  }
+  5% {
+    opacity: 0.96511;
+  }
+  10% {
+    opacity: 0.46635;
+  }
+  15% {
+    opacity: 0.86094;
+  }
+  20% {
+    opacity: 0.20493;
+  }
+  25% {
+    opacity: 0.61866;
+  }
+  30% {
+    opacity: 0.70447;
+  }
+  35% {
+    opacity: 0.42388;
+  }
+  40% {
+    opacity: 0.95541;
+  }
+  45% {
+    opacity: 0.86719;
+  }
+  50% {
+    opacity: 0.614;
+  }
+  55% {
+    opacity: 0.54076;
+  }
+  60% {
+    opacity: 0.43391;
+  }
+  65% {
+    opacity: 0.4912;
+  }
+  70% {
+    opacity: 0.40216;
+  }
+  75% {
+    opacity: 0.38572;
+  }
+  80% {
+    opacity: 0.89633;
+  }
+  85% {
+    opacity: 0.9778;
+  }
+  90% {
+    opacity: 0.61705;
+  }
+  95% {
+    opacity: 0.08263;
+  }
+  100% {
+    opacity: 0.98008;
+  }
+}
+@keyframes soft-flicker {
+  0% {
+    opacity: 0.74363;
+  }
+  5% {
+    opacity: 0.75277;
+  }
+  10% {
+    opacity: 0.70246;
+  }
+  15% {
+    opacity: 0.83105;
+  }
+  20% {
+    opacity: 0.80932;
+  }
+  25% {
+    opacity: 0.8308;
+  }
+  30% {
+    opacity: 0.81419;
+  }
+  35% {
+    opacity: 0.75206;
+  }
+  40% {
+    opacity: 0.77242;
+  }
+  45% {
+    opacity: 0.866;
+  }
+  50% {
+    opacity: 0.80866;
+  }
+  55% {
+    opacity: 0.70394;
+  }
+  60% {
+    opacity: 0.79313;
+  }
+  65% {
+    opacity: 0.85398;
+  }
+  70% {
+    opacity: 0.76619;
+  }
+  75% {
+    opacity: 0.82735;
+  }
+  80% {
+    opacity: 0.75142;
+  }
+  85% {
+    opacity: 0.87215;
+  }
+  90% {
+    opacity: 0.86503;
+  }
+  95% {
+    opacity: 0.76128;
+  }
+  100% {
+    opacity: 0.80136;
+  }
+}
+.crt {
+  overflow: hidden;
+}
+
+.crt::before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  background-size: 100% 2px, 3px 100%;
+  z-index: 20;
+  pointer-events: none;
+  animation: hard-flicker 0.16s infinite;
+}
+
+.crt:after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(18, 16, 16, 0.1);
+  opacity: 0;
+  z-index: 20;
+  pointer-events: none;
+}

@@ -1,0 +1,1004 @@
+i {
+    display: block;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    content: '';
+}
+
+body {
+    background: #101914;
+    padding: 0;
+    overflow: hidden;
+}
+
+div {
+    width: 100vmin;
+    height: 100vmin;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+//boring background
+
+background {
+    opacity: .75;
+    filter: blur(3vmin);
+
+    i {
+        width: 20vmin;
+        height: 20vmin;
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        &:nth-of-type(2) {
+            background: #525500;
+        }
+
+        &:nth-of-type(5) {
+            background: #638870;
+            transform: translate3d(18vmin,-10vmin,0);
+            width: 40vmin;
+            height: 40vmin;
+        }
+
+        &:nth-of-type(4) {
+            background: #4C582E;
+            transform: translate3d(50vmin,-5vmin,0);
+            width: 25vmin;
+            height: 25vmin;
+        }
+
+        &:nth-of-type(3) {
+            background: #1A3233;
+            transform: translate3d(60vmin,-15vmin,0);
+            width: 50vmin;
+            height: 50vmin;
+        }
+
+        &:nth-of-type(6) {
+            background: #488800;
+            transform: translate3d(80vmin,10vmin,0);
+            width: 25vmin;
+            height: 25vmin;
+            box-shadow: 15vmin -5vmin 0 rgba(#488800,.8), 25vmin 4vmin 0 rgba(#488800,.9), 30vmin 11vmin 0 rgba(#488800,.8), 12vmin 15vmin 0 rgba(#488800,.9), 2vmin 9vmin 0 rgba(#488800,.8);
+        }
+
+        &:nth-of-type(15) {
+            background: #677300;
+            transform: translate3d(-5vmin,50vmin,0);
+            width: 30vmin;
+            height: 30vmin;
+        }
+
+        &:nth-of-type(7) {
+            background: #1E1E11;
+            transform: translate3d(20vmin,30vmin,0);
+            width: 50vmin;
+            height: 50vmin;
+        }
+
+        &:nth-of-type(1) {
+            background: #202400;
+            transform: translate3d(-10vmin,10vmin,0);
+            width: 55vmin;
+            height: 55vmin;
+        }
+
+        &:nth-of-type(8) {
+            background: #294A2C;
+            transform: translate3d(60vmin,40vmin,0);
+            width: 40vmin;
+            height: 40vmin;
+        }
+
+        &:nth-of-type(9) {
+            background: #488800;
+            transform: translate3d(90vmin,40vmin,0);
+            width: 25vmin;
+            height: 25vmin;
+            box-shadow: 17vmin -7vmin 0 rgba(#488800,.8), 23vmin 6vmin 0 rgba(#488800,.9), 32vmin 15vmin 0 rgba(#488800,.8), 10vmin 10vmin 0 rgba(#488800,.9), -5vmin 9vmin 0 rgba(#488800,.8);
+        }
+
+        &:nth-of-type(11) {
+            background: #20251A;
+            transform: translate3d(-15vmin,70vmin,0);
+            width: 40vmin;
+            height: 40vmin;
+        }
+
+        &:nth-of-type(12) {
+            background: #032631;
+            transform: translate3d(20vmin,60vmin,0);
+            width: 30vmin;
+            height: 30vmin;
+            box-shadow: 20vmin 20vmin 0 rgba(#032631,.8);
+        }
+
+        &:nth-of-type(13) {
+            background: #004D50;
+            transform: translate3d(60vmin,75vmin,0);
+            width: 45vmin;
+            height: 45vmin;
+        }
+
+        &:nth-of-type(14) {
+            background: #1F403D;
+            transform: translate3d(100vmin,70vmin,0);
+            width: 40vmin;
+            height: 40vmin;
+        }
+    }
+}
+
+//animations
+
+@keyframes shake {
+    0% {
+        left: .4vmin;
+        top: .4vmin;
+    }
+
+    25% {
+        left: -.35vmin;
+        top: -.35vmin;
+    }
+
+    50% {
+        left: .3vmin;
+        top: .3vmin;
+    }
+
+    75% {
+        left: -.25vmin;
+        top: -.25vmin;
+    }
+
+    80% {
+        left: .2vmin;
+        top: .2vmin;
+    }
+
+    90% {
+        left: -.15vmin;
+        top: -.15vmin;
+    }
+
+    95% {
+        left: .1vmin;
+        top: .1vmin;
+    }
+}
+
+@keyframes walk {
+    20% {
+        transform: scaleX(1.1) rotate(10deg);
+    }
+
+    40% {
+        transform: scaleX(1)
+    }
+
+    60% {
+        transform: scaleX(.8) rotate(-10deg);
+    }
+
+    80% {
+        transform: scaleX(1)
+    }
+}
+
+@keyframes walk2 {
+    20% {
+        transform: scaleX(1.1) rotate(10deg);
+    }
+
+    40% {
+        transform: scaleX(1)
+    }
+
+    60% {
+        transform: scaleX(.8) rotate(-10deg);
+    }
+
+    80% {
+        transform: scaleX(1)
+    }
+}
+
+// make one web tiny for the middle
+// can't get the thickness right!
+
+web:nth-of-type(1) {
+    transform: translate3d(-14.7vmin, 47.5vmin, 0) scale(0.215) rotate(-97deg);
+
+    i, i:before, i:after {
+        border-left: .6vmin solid #fff;
+        border-top: .6vmin solid #fff;
+    }
+
+    & > i:nth-of-type(19):after {
+        display: none;
+    }
+}
+
+//the web
+
+web {
+    display: block;
+    transform: translate3d(4vmin, -15vmin,0);
+
+    & > i, & > i:before, & > i:after {
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-left: .1vmin solid #fff;
+        border-top: .1vmin solid #fff;
+        transform-origin: 100% 0;
+        transition: all .5s ease-in-out;
+        cursor: pointer;
+    }
+
+        & > i:hover {
+            animation: shake .5s ease-in-out;
+        }
+
+        & > i:nth-of-type(1) {
+            width: 3.5vmin;
+            height: 4vmin;
+            transform: translate3d(45.5vmin, 52.5vmin,0) rotate(15deg) skew(5deg);
+
+            &:before {
+                width: 3vmin;
+                height: 4.25vmin;
+                transform: translate3d(-3vmin, .5vmin, 0) rotate(-6deg) skew(5deg);
+            }
+
+            &:after {
+                width: 4vmin;
+                height: 5vmin;
+                transform: translate3d(-7vmin, 1vmin, 0) rotate(-20deg) skew(6deg);
+            }
+
+            &:hover ~ spider {
+                transform: translate3d(-15vmin, 45vmin, 0) rotate(-45deg);
+            }
+        }
+
+    & > :nth-of-type(2) {
+        width: 4vmin;
+        height: 5vmin;
+        transform: translate3d(34.75vmin, 52.5vmin, 0) rotate(-40deg) skew(5deg);
+
+        &:before {
+            width: 5vmin;
+            height: 6.2vmin;
+            transform: translate3d(-5vmin, -.25vmin, 0) rotate(-8deg) skew(0deg)
+        }
+
+        &:hover ~ spider {
+            transform: translate3d(-20vmin, 40vmin, 0) rotate(-20deg);
+        }
+    }
+
+    & > i:nth-of-type(3) {
+        width: 4.5vmin;
+        height: 5.6vmin;
+        transform: translate3d(28vmin, 58.5vmin,0) rotate(-90deg) skew(8deg);
+
+        &:before {
+            width: 5vmin;
+            height: 5.1vmin;
+            transform: translate3d(-5vmin, -0.25vmin, 0) rotate(-12deg) skew(8deg);
+        }
+
+        &:after {
+            width: 4vmin;
+            height: 5.3vmin;
+            transform: translate3d(-9vmin, 1vmin, 0) rotate(-20deg) skew(18deg);
+        }
+
+        &:hover ~ spider {
+            transform: translate3d(0vmin, 60vmin, 0) rotate(45deg);
+        }
+    }
+
+    & > i:nth-of-type(4) {
+        width: 4.5vmin;
+        height: 5.5vmin;
+        transform: translate3d(30.5vmin, 71.5vmin,0) rotate(-150deg) skew(-3deg);
+
+        &:before {
+            width: 5vmin;
+            height: 6vmin;
+            transform: translate3d(-5vmin, .5vmin, 0) rotate(-6deg) skew(15deg);
+        }
+
+        &:after {
+            width: 4vmin;
+            height: 6.1vmin;
+            transform: translate3d(-9vmin, 1vmin, 0) rotate(-30deg) skew(5deg);
+        }
+
+        &:hover ~ spider {
+            transform: translate3d(-4vmin, 55vmin, 0) rotate(5deg);
+        }
+    }
+
+    & > i:nth-of-type(5) {
+        width: 4.5vmin;
+        height: 6.2vmin;
+        transform: translate3d(43vmin, 75.5vmin,0) rotate(-200deg) skew(6deg);
+
+        &:before {
+            width: 5vmin;
+            height: 6.3vmin;
+            transform: translate3d(-5vmin, .5vmin, 0) rotate(-6deg) skew(5deg);
+        }
+
+        &:after {
+            width: 4vmin;
+            height: 6.4vmin;
+            transform: translate3d(-9vmin, 1vmin, 0) rotate(-20deg) skew(19deg);
+        }
+
+        &:hover ~ spider {
+            transform: translate3d(-10vmin, 50vmin, 0) rotate(-30deg);
+        }
+    }
+
+    & > i:nth-of-type(6) {
+        width: 4.5vmin;
+        height: 6.5vmin;
+        transform: translate3d(54vmin, 69vmin,0) rotate(-250deg) skew(6deg);
+
+        &:before {
+            width: 5vmin;
+            height: 6.6vmin;
+            transform: translate3d(-5vmin, .5vmin, 0) rotate(-6deg) skew(8deg);
+        }
+
+        &:after {
+            width: 4vmin;
+            height: 7.2vmin;
+            transform: translate3d(-9vmin, 1vmin, 0) rotate(-20deg) skew(7deg);
+        }
+
+        &:hover ~ spider {
+            transform: translate3d(-10vmin, 60vmin, 0) rotate(-70deg);
+        }
+    }
+
+    & > i:nth-of-type(7) {
+        width: 4.5vmin;
+        height: 6.8vmin;
+        transform: translate3d(56vmin, 56vmin,0) rotate(-300deg) skew(6deg);
+
+        &:before {
+            width: 5vmin;
+            height: 6.6vmin;
+            transform: translate3d(-5vmin, .5vmin, 0) rotate(-6deg) skew(5deg);
+        }
+
+        &:after {
+            width: 4vmin;
+            height: 7.1vmin;
+            transform: translate3d(-9vmin, 1vmin, 0) rotate(-20deg) skew(7deg);
+        }
+
+        &:hover ~ spider {
+            transform: translate3d(-15vmin, 70vmin, 0) rotate(-120deg);
+        }
+    }
+
+    & > i:nth-of-type(8) {
+        width: 5.5vmin;
+        height: 7.3vmin;
+        transform: translate3d(46.5vmin, 46.2vmin, 0) rotate(15deg) skew(6deg);
+
+        &:before {
+            width: 5vmin;
+            height: 7.5vmin;
+            transform: translate3d(-5vmin, -.2vmin, 0) rotate(-10deg) skew(5deg);
+        }
+
+        &:after {
+            width: 5.8vmin;
+            height: 7.5vmin;
+            transform: translate3d(-10.5vmin, .75vmin, 0) rotate(-20deg) skew(7deg);
+        }
+
+        &:hover ~ spider {
+            transform: translate3d(15vmin, 70vmin, 0) rotate(120deg);
+        }
+    }
+
+    & > i:nth-of-type(9) {
+        width: 7vmin;
+        height: 8vmin;
+        transform: translate3d(30vmin, 45.2vmin, 0) rotate(-30deg) skew(6deg);
+
+        &:before {
+            width: 7.5vmin;
+            height: 7.75vmin;
+            transform: translate3d(-7.75vmin, 0vmin, 0) rotate(-15deg) skew(5deg);
+        }
+
+        &:hover ~ spider {
+            transform: translate3d(10vmin, 70vmin, 0) rotate(110deg);
+        }
+    }
+
+    & > i:nth-of-type(10) {
+        width: 8vmin;
+        height: 9vmin;
+        transform: translate3d(18vmin, 54vmin, 0) rotate(-75deg) skew(6deg);
+
+        &:before {
+            width: 8vmin;
+            height: 9.5vmin;
+            transform: translate3d(-8vmin, -.1vmin, 0) rotate(-15deg) skew(5deg);
+        }
+
+        &:after {
+            width: 9vmin;
+            height: 8.5vmin;
+            transform: translate3d(-16.5vmin, 2vmin, 0) rotate(-40deg) skew(9deg);
+        }
+
+        &:hover ~ spider {
+            transform: translate3d(-4vmin, 62vmin, 0) rotate(70deg);
+        }
+    }
+
+    & > i:nth-of-type(11) {
+        width: 9vmin;
+        height: 10vmin;
+        transform: translate3d(19vmin, 76.5vmin, 0) rotate(-130deg) skew(22deg);
+
+        &:before {
+            width: 9vmin;
+            height: 10.5vmin;
+            transform: translate3d(-9vmin, -0.1vmin, 0) rotate(-19deg) skew(0deg);
+        }
+
+        &:after {
+            width: 9vmin;
+            height: 10vmin;
+            transform: translate3d(-17.5vmin, 3vmin, 0) rotate(-35deg) skew(8deg);
+        }
+
+        &:hover ~ spider {
+            transform: translate3d(-4vmin, 62vmin, 0) rotate(10deg);
+        }
+    }
+
+    & > i:nth-of-type(12) {
+        width: 9.9vmin;
+        height: 13vmin;
+        transform: translate3d(38.25vmin, 87.5vmin, 0) rotate(-190deg) skew(18deg);
+
+        &:before {
+            width: 9vmin;
+            height: 12vmin;
+            transform: translate3d(-9vmin, -0.1vmin, 0) rotate(-19deg) skew(-3deg);
+        }
+
+        &:after {
+            width: 9vmin;
+            height: 10.5vmin;
+            transform: translate3d(-17.5vmin, 3vmin, 0) rotate(-35deg) skew(3deg);
+        }
+
+        &:hover ~ spider {
+            transform: translate3d(-4vmin, 62vmin, 0) rotate(-30deg);
+        }
+    }
+
+    & > i:nth-of-type(13) {
+        width: 9.9vmin;
+        height: 13.5vmin;
+        transform: translate3d(59.25vmin, 75.5vmin, 0) rotate(-240deg) skew(21deg);
+
+        &:before {
+            width: 9vmin;
+            height: 12.75vmin;
+            transform: translate3d(-9vmin, -0.1vmin, 0) rotate(-19deg) skew(-4deg);
+        }
+
+        &:after {
+            width: 9vmin;
+            height: 11vmin;
+            transform: translate3d(-17.5vmin, 3vmin, 0) rotate(-35deg) skew(1deg);
+        }
+
+        &:hover ~ spider {
+            transform: translate3d(-4vmin, 62vmin, 0) rotate(-70deg);
+        }
+    }
+
+    & > i:nth-of-type(14) {
+        width: 9.9vmin;
+        height: 14vmin;
+        transform: translate3d(63vmin, 52vmin, 0) rotate(-290deg) skew(20deg);
+
+        &:before {
+            width: 9vmin;
+            height: 13.2vmin;
+            transform: translate3d(-9vmin, -0.1vmin, 0) rotate(-19deg) skew(-5deg);
+        }
+
+        &:after {
+            width: 9vmin;
+            height: 11.5vmin;
+            transform: translate3d(-17.5vmin, 3vmin, 0) rotate(-35deg) skew(0deg)
+        }
+
+        &:hover ~ spider {
+            transform: translate3d(-4vmin, 62vmin, 0) rotate(-120deg);
+        }
+    }
+
+    & > i:nth-of-type(15) {
+        width: 10vmin;
+        height: 15vmin;
+        transform: translate3d(47.5vmin, 33.5vmin, 0) rotate(25deg) skew(18.5deg);
+
+        &:before {
+            width: 9vmin;
+            height: 14vmin;
+            transform: translate3d(-9vmin, -0.1vmin, 0) rotate(-19deg) skew(-5deg);
+        }
+
+        &:after {
+            width: 9.5vmin;
+            height: 13vmin;
+            transform: translate3d(-18vmin, 3vmin, 0) rotate(-28.5deg) skew(0deg);
+        }
+
+        &:hover ~ spider {
+            transform: translate3d(-4vmin, 62vmin, 0) rotate(-180deg);
+        }
+    }
+
+    & > i:nth-of-type(16) {
+        width: 10.5vmin;
+        height: 16vmin;
+        transform: translate3d(22vmin, 30.25vmin, 0) rotate(-25deg) skew(5deg);
+
+        &:before {
+            width: 15vmin;
+            height: 15.5vmin;
+            transform: translate3d(-15vmin, -0.1vmin, 0) rotate(-19deg) skew(7deg);
+        }
+
+        &:after {
+            width: 15vmin;
+            height: 15vmin;
+            transform: translate3d(-29vmin, 5vmin, 0) rotate(-46deg) skew(6deg);
+        }
+
+        &:hover ~ spider {
+            transform: translate3d(-14vmin, 58vmin, 0) rotate(130deg);
+        }
+    }
+
+    & > i:nth-of-type(17) {
+        width: 13vmin;
+        height: 16vmin;
+        transform: translate3d(-4vmin, 59vmin, 0) rotate(-90deg) skew(10deg);
+
+        &:before {
+            width: 16vmin;
+            height: 15.5vmin;
+            transform: translate3d(-16vmin, -0.1vmin, 0) rotate(-19deg) skew(8deg);
+        }
+
+        &:after {
+            width: 15vmin;
+            height: 16vmin;
+            transform: translate3d(-30vmin, 5vmin, 0) rotate(-35deg) skew(11deg);
+        }
+
+        &:hover ~ spider {
+            transform: translate3d(-14vmin, 70vmin, 0) rotate(50deg);
+        }
+    }
+
+    & > i:nth-of-type(18) {
+        width: 14.5vmin;
+        height: 18vmin;
+        transform: translate3d(8vmin, 96.5vmin, 0) rotate(-149deg) skew(13deg);
+
+        &:before {
+            width: 16vmin;
+            height: 17.5vmin;
+            transform: translate3d(-16vmin, -0.1vmin, 0) rotate(-19deg) skew(6deg);
+        }
+
+        &:after {
+            width: 18vmin;
+            height: 17vmin;
+            transform: translate3d(-33vmin, 5vmin, 0) rotate(-37deg) skew(11deg);
+        }
+
+        &:hover ~ spider {
+            transform: translate3d(-4vmin, 80vmin, 0) rotate(5deg);
+        }
+    }
+
+    & > i:nth-of-type(19) {
+        width: 14.5vmin;
+        height: 20vmin;
+        transform: translate3d(50vmin, 103.5vmin, 0) rotate(-205deg) skew(14deg);
+
+        &:before {
+            width: 16vmin;
+            height: 20vmin;
+            transform: translate3d(-16vmin, -0.1vmin, 0) rotate(-19deg) skew(3deg);
+        }
+
+        &:after {
+            width: 18vmin;
+            height: 18vmin;
+            transform: translate3d(-33vmin, 5vmin, 0) rotate(-37deg) skew(6deg);
+        }
+
+        &:hover ~ spider {
+            transform: translate3d(14vmin, 80vmin, 0) rotate(-45deg);
+        }
+    }
+
+    & > i:nth-of-type(20) {
+        width: 14.5vmin;
+        height: 21.5vmin;
+        transform: translate3d(79.25vmin, 72.25vmin, 0) rotate(-256deg) skew(16.5deg);
+
+        &:before {
+            width: 16vmin;
+            height: 21vmin;
+            transform: translate3d(-16vmin, -0.1vmin, 0) rotate(-19deg) skew(1.5deg);
+        }
+
+        &:after {
+            width: 19vmin;
+            height: 19vmin;
+            transform: translate3d(-34vmin, 5vmin, 0) rotate(-37deg) skew(5deg);
+        }
+
+        &:hover ~ spider {
+            transform: translate3d(14vmin, 60vmin, 0) rotate(-90deg);
+        }
+    }
+
+    & > i:nth-of-type(21) {
+        width: 14.5vmin;
+        height: 23vmin;
+        transform: translate3d(73vmin, 30vmin, 0) rotate(55deg) skew(16.5deg);
+
+        &:before {
+            width: 16vmin;
+            height: 22.5vmin;
+            transform: translate3d(-16vmin, -0.1vmin, 0) rotate(-19deg) skew(-0.5deg);
+        }
+
+        &:after {
+            width: 19vmin;
+            height: 19.5vmin;
+            transform: translate3d(-34vmin, 5vmin, 0) rotate(-37deg) skew(2deg);
+        }
+
+        &:hover ~ spider {
+            transform: translate3d(0vmin, 60vmin, 0) rotate(-150deg);
+        }
+    }
+
+    & > i:nth-of-type(22) {
+        width: 14.5vmin;
+        height: 23.5vmin;
+        transform: translate3d(36.5vmin, 7vmin, 0) rotate(10deg) skew(18.5deg);
+
+        &:before {
+            width: 16vmin;
+            height: 22.5vmin;
+            transform: translate3d(-16vmin, -0.1vmin, 0) rotate(-18deg) skew(-0.5deg);
+        }
+
+        &:after {
+            width: 19vmin;
+            height: 20.5vmin;
+            transform: translate3d(-34vmin, 4.75vmin, 0) rotate(-33deg) skew(2deg);
+        }
+
+        &:hover ~ spider {
+            transform: translate3d(-8vmin, 50vmin, 0) rotate(150deg);
+        }
+    }
+
+    & > i:nth-of-type(23) {
+        width: 25vmin;
+        height: 25vmin;
+        transform: translate3d(-16vmin, 15vmin, 0) rotate(-41deg) skew(18deg);
+
+        &:before {
+            width: 25vmin;
+            height: 27vmin;
+            transform: translate3d(-25.25vmin, -0.1vmin, 0) rotate(-18deg) skew(2.5deg);
+        }
+
+        &:after {
+            width: 30vmin;
+            height: 26vmin;
+            transform: translate3d(-54vmin, 7.5vmin, 0) rotate(-40deg) skew(12deg);
+        }
+
+        &:hover ~ spider {
+            transform: translate3d(-20vmin, 60vmin, 0) rotate(100deg);
+        }
+    }
+
+    & > i:nth-of-type(24) {
+        width: 27vmin;
+        height: 30vmin;
+        transform: translate3d(-48vmin, 77vmin, 0) rotate(-110deg) skew(12deg);
+
+        &:before {
+            width: 25vmin;
+            height: 28.5vmin;
+            transform: translate3d(-25.25vmin, -0.1vmin, 0) rotate(-18deg) skew(2.5deg);
+        }
+
+        &:after {
+            width: 30vmin;
+            height: 26vmin;
+            transform: translate3d(-54vmin, 7.5vmin, 0) rotate(-40deg) skew(11deg);
+        }
+
+        &:hover ~ spider {
+            transform: translate3d(-20vmin, 80vmin, 0) rotate(50deg);
+        }
+    }
+
+    & > i:nth-of-type(25) {
+        width: 27vmin;
+        height: 28.5vmin;
+        transform: translate3d(0vmin, 131.5vmin, 0) rotate(190deg) skew(18deg);
+
+        &:before {
+            width: 25vmin;
+            height: 27.5vmin;
+            transform: translate3d(-25.25vmin, -0.1vmin, 0) rotate(-18deg) skew(-2.5deg);
+        }
+
+        &:after {
+            width: 30vmin;
+            height: 26.5vmin;
+            transform: translate3d(-54vmin, 7.5vmin, 0) rotate(-30deg) skew(14deg);
+        }
+
+        &:hover ~ spider {
+            transform: translate3d(-4vmin, 90vmin, 0) rotate(10deg);
+        }
+    }
+
+    & > i:nth-of-type(26) {
+        width: 27vmin;
+        height: 32vmin;
+        transform: translate3d(72vmin, 121.5vmin, 0) rotate(134deg) skew(17deg);
+
+        &:before {
+            width: 25vmin;
+            height: 31vmin;
+            transform: translate3d(-25.25vmin, -0.1vmin, 0) rotate(-18deg) skew(-4deg);
+        }
+
+        &:after {
+            width: 30vmin;
+            height: 29vmin;
+            transform: translate3d(-54vmin, 7.5vmin, 0) rotate(-30deg) skew(10deg);
+        }
+
+        &:hover ~ spider {
+            transform: translate3d(15vmin, 80vmin, 0) rotate(-45deg);
+        }
+    }
+
+    & > i:nth-of-type(27) {
+        width: 27vmin;
+        height: 33vmin;
+        transform: translate3d(104vmin, 56vmin, 0) rotate(80deg) skew(15deg);
+
+        &:before {
+            width: 25vmin;
+            height: 31.5vmin;
+            transform: translate3d(-25.25vmin, -0.1vmin, 0) rotate(-18deg) skew(-5deg);
+        }
+
+        &:after {
+            width: 30vmin;
+            height: 28.5vmin;
+            transform: translate3d(-54vmin, 7.5vmin, 0) rotate(-30deg) skew(10deg);
+        }
+
+        &:hover ~ spider {
+            transform: translate3d(15vmin, 50vmin, 0) rotate(-125deg);
+        }
+    }
+    //animate on hover
+    & > i:nth-of-type(odd):hover ~ spider {
+        & > i {
+            animation: walk2 1s ease-in-out reverse;
+        }
+
+            & > i:nth-of-type(2) {
+                animation: walk2 1s ease-in-out;
+            }
+    }
+}
+
+    web > i:hover ~ spider, web:nth-of-type(1):hover ~ web spider {
+        & > i {
+            animation: walk 1s ease-in-out;
+        }
+
+            & > i:nth-of-type(2) {
+                animation: walk 1s ease-in-out reverse;
+            }
+    }
+
+spider {
+    width: 8vmin;
+    height: 8vmin;
+    background: #000;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    transform: translate3d(-4vmin, 0vmin, 0) rotate(0deg) scaleX(.9);
+    transition: all 1s ease-in-out;
+    border-radius: 50%;
+    transform-origin: 50% 0;
+
+    &:after {
+        width: 12vmin;
+        height: 12vmin;
+        background: #000;
+        position: absolute;
+        left: -2vmin;
+        right: -2vmin;
+        top: 0;
+        margin: auto;
+        transform: translate3d(0vmin, -10vmin, 0) rotate(45deg);
+        border-radius: 35% 45% 0 45%;
+    }
+
+    &:before {
+        width: 2vmin;
+        height: 3vmin;
+        background: #000;
+        position: absolute;
+        left: -2vmin;
+        right: -2vmin;
+        top: 0;
+        margin: auto;
+        transform: translate3d(-1.5vmin, 6vmin, 0);
+        border-radius: 1vmin;
+        box-shadow: 3vmin 0 0 #000;
+    }
+
+    i > i, i > i:after, i > i:before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 8vmin;
+        border-radius: 50%;
+        height: 1.5vmin;
+        background: #000;
+    }
+
+    i {
+        i:nth-of-type(1) {
+            transform: translate3d(6vmin, -2vmin, 0) rotate(-40deg);
+
+            &:before {
+                transform: translate3d(7vmin, -1.5vmin, 0) rotate(-20deg);
+            }
+        }
+
+        i:nth-of-type(2) {
+            transform: translate3d(-6vmin, .5vmin, 0) rotate(10deg);
+
+            &:before {
+                transform: translate3d(-7vmin, -1.5vmin, 0) rotate(20deg);
+            }
+        }
+
+        i:nth-of-type(3) {
+            transform: translate3d(6vmin, 3vmin, 0) rotate(20deg);
+
+            &:before {
+                transform: translate3d(7vmin, -1.5vmin, 0) rotate(-20deg);
+            }
+        }
+
+        i:nth-of-type(4) {
+            transform: translate3d(-6vmin, 6vmin, 0) rotate(-50deg);
+            animation: 1s wait ease-in-out alternate infinite;
+
+            &:before {
+                transform: translate3d(-7vmin, 1vmin, 0) rotate(-20deg);
+            }
+        }
+    }
+
+    @keyframes wait {
+        100% {
+            transform: translate3d(-6vmin, 6vmin, 0) rotate(-40deg);
+        }
+    }
+
+    i:nth-of-type(2) {
+        i:nth-of-type(1) {
+            transform: translate3d(-6vmin, -2vmin, 0) rotate(40deg);
+
+            &:before {
+                transform: translate3d(-7vmin, -1.5vmin, 0) rotate(20deg);
+            }
+        }
+
+        i:nth-of-type(2) {
+            transform: translate3d(6vmin, .5vmin, 0) rotate(-10deg);
+
+            &:before {
+                transform: translate3d(7vmin, -1.5vmin, 0) rotate(-20deg);
+            }
+        }
+
+        i:nth-of-type(3) {
+            transform: translate3d(-6vmin, 3vmin, 0) rotate(-20deg);
+
+            &:before {
+                transform: translate3d(-7vmin, -1.5vmin, 0) rotate(20deg);
+            }
+        }
+
+        i:nth-of-type(4) {
+            transform: translate3d(6vmin, 6vmin, 0) rotate(50deg);
+            animation: 1s wait2 ease-in-out alternate infinite;
+
+            &:before {
+                transform: translate3d(7vmin, 1vmin, 0) rotate(20deg);
+            }
+        }
+    }
+
+    @keyframes wait2 {
+        100% {
+            transform: translate3d(6vmin, 6vmin, 0) rotate(40deg);
+        }
+    }
+}
+// spider come down
+web:hover spider {
+    transform: translate3d(-4vmin, 62vmin, 0) rotate(0deg);
+}
+
+//middle web
+web:nth-of-type(1):hover ~ web spider {
+    transform: translate3d(-4vmin, 30vmin, 0) rotate(0deg);
+}
+
+// spider run away
+web spider:hover {
+    transform: translate3d(-4vmin, 0vmin, 0) rotate(0deg);
+}

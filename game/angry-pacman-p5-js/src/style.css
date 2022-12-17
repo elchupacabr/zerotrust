@@ -1,0 +1,11 @@
+p {
+  width: 864px;
+  padding:8px;
+  background-color:lightgray;
+  color: rgb(1, 87, 155);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+span {
+  color: red;
+}

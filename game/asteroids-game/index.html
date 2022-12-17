@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - CSS Asteroids Game</title>
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/press-start-2p" type="text/css"/><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id='game' class='crt'>
+  <div class='game-element gamefont score'>10159</div>
+</div>
+<div id='title' class='crt'>
+  <div class='game-element gamefont titlefont'>Asteroid<span id='dev'>s</span></div>  
+  <div class='game-element gamefont titlefont title2font'>
+    a demo project
+  </div>
+  <div id='startbutton' class='game-element gamefont startfont'>Play</div>
+  <div class='game-element gamefont devfont'>
+    by <a class='devlink' href='https://patrickheney.com'>Patrick Heney</a>
+  <br><br><span>&copy; 2015</span>&nbsp;</div>
+</div>
+<div id='info' class='crt'>
+  <div class='gamefont devfont' style='text-align:left; width: 100%'>
+    <p>Known Issues</p>
+    <ul>
+      <li>Exhaust does not show when player presses 'thrust'</li>
+      <li>Small asteroids do not always update their fill color correctly</li>
+    </ul>
+  </div>
+</div>
+<!--
+<div class='game-element gamefont score'>10159</div>
+  <div class='game-element star'></div>
+  <div class='game-element asteroid'>
+    <svg>
+      <polygon points='10,20 50,0 95,50, 75,95 25,95 5,50' />
+    </svg>
+  </div>
+  <div class='game-element bullet'></div>
+  <div class='game-element player'>
+    <div id='ship'>
+      <svg>
+        <polygon points='0,0 20,10 0,20 5,10' />
+      </svg>
+    </div>
+    <div id='exhaust' class='exhaust'>
+      <svg>
+        <polygon points='20,5 20,15 0,10' />
+      </svg>
+    </div>
+  </div>
+  <div class='game-element star' style='left:250px; top:200px;'></div>
+  <div class='game-element star' style='left:300px; top:215px;'></div>
+  <div class='game-element star' style='left:275px; top:190px;'></div>
+-->
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
