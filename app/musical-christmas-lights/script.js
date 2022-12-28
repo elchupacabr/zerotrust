@@ -119,7 +119,8 @@ function loadAudio(i) {
     "https://flyandflake.github.io/zerotrust/src/audio/bobby-helms-jingle-bell-rock.mp3",
 	"https://flyandflake.github.io/zerotrust/src/audio/dean-martin-let-it-snow.mp3",
 	"https://flyandflake.github.io/zerotrust/src/audio/ljapis_trubeckoj_-_kapital_(z2.fm).mp3",
-      ];
+     "https://flyandflake.github.io/zerotrust/src/audio/Wham_-_last_christmas_I_gave_you_my_heart_69115778.mp3",
+ ];
   const file = files[i];
 
   const loader = new THREE.AudioLoader();
