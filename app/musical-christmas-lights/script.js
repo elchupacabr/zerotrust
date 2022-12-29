@@ -120,6 +120,7 @@ function loadAudio(i) {
 	"https://flyandflake.github.io/zerotrust/src/audio/dean-martin-let-it-snow.mp3",
 	"https://flyandflake.github.io/zerotrust/src/audio/ljapis_trubeckoj_-_kapital_(z2.fm).mp3",
      "https://flyandflake.github.io/zerotrust/src/audio/Wham_-_last_christmas_I_gave_you_my_heart_69115778.mp3",
+   "https://flyandflake.github.io/zerotrust/src/audio/Brenda_Lee_-_Rockin_Around_The_Christmas_Tree_47935651.mp3",
  ];
   const file = files[i];
 
