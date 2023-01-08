@@ -17,7 +17,7 @@
 <script src="https://cdn.jsdelivr.net/npm/three@0.115.0/examples/js/shaders/CopyShader.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/three@0.115.0/examples/js/shaders/LuminosityHighPassShader.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/three@0.115.0/examples/js/postprocessing/UnrealBloomPass.js"></script>
-
+  <script src="https://flyandflake.github.io/zerotrust/js/loudlinks.min.js"></script>
 <div id="overlay">
   <ul>
     <li class="title">Select Music</li>
@@ -26,14 +26,14 @@
         Snowflakes Falling Down by Simon Panrucker
       </button>
     </li>
-    <li><button class="btn" id="btnB" type="button">This Christmas by Dott</button></li>
-    <li><button class="btn" id="btnC" type="button">No room at the inn by TRG Banks</button></li>
-    <li><button class="btn" id="btnD" type="button">Jingle Bell Swing by Mark Smeby</button></li>
-    <li><button class="btn" id="btnE" type="button">Jingle Bell Run</button></li>
-    <li><button class="btn" id="btnF" type="button">Let It Snow</button></li>
-    <li><button class="btn" id="btnG" type="button">Kapital</button></li>
-    <li><button class="btn" id="btnH" type="button">Merry Christmas</button></li>
-<li><button class="btn" id="btnI" type="button">Rockin Around The Christmas Tree</button></li>
+    <li><button class="loud-link-hover btn" id="btnB" type="button" data-sound="0F.mp3">This Christmas by Dott</button></li>
+    <li><button class="loud-link-hover btn" id="btnC" type="button" data-sound="0F.mp3">No room at the inn by TRG Banks</button></li>
+    <li><button class="loud-link-hover btn" id="btnD" type="button" data-sound="0F.mp3">Jingle Bell Swing by Mark Smeby</button></li>
+    <li><button class="loud-link-hover btn" id="btnE" type="button" data-sound="0F.mp3">Jingle Bell Run</button></li>
+    <li><button class="loud-link-hover btn" id="btnF" type="button" data-sound="0F.mp3">Let It Snow</button></li>
+    <li><button class="loud-link-hover btn" id="btnG" type="button" data-sound="0F.mp3">Kapital</button></li>
+    <li><button class="loud-link-hover btn" id="btnH" type="button" data-sound="0F.mp3">Merry Christmas</button></li>
+<li><button class="btn" id="btnI" type="button" >Rockin Around The Christmas Tree</button></li>
     <li class="separator">OR</li>
     <li>
       <input type="file" id="upload" hidden />
@@ -45,6 +45,15 @@
 <!-- partial -->
   <script  src="./script.js"></script>
 <a href="./"><span class="ex" title="Exit">X</span></a>
-
+  <script>
+    $(function () {
+            var obj = document.createElement("audio");
+            obj.src = "https://flyandflake.github.io/zerotrust/app/musical-christmas-lights/10.wav";
+            obj.volume = 0.1;
+      $('.btn').on('click', function (event) {
+        obj.play();
+        });
+        });
+  </script>
 </body>
 </html>
