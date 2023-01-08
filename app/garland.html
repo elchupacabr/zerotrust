@@ -170,8 +170,13 @@
        </div>
     <script>
         $(function () {
+            var obj = document.createElement("audio");
+            obj.src = "https://assets.codepen.io/605876/click.mp3";
+            obj.volume = 0.1;
           $('.toggle').on('click', function (event) {
+              
             $(this).toggleClass('active');
+              obj.play();
               $('i').toggleClass('fa-duotone');
             $('div').toggleClass('garland-new-year_animate_yes');
           });
