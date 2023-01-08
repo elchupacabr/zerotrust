@@ -45,7 +45,8 @@ ul {
   cursor: pointer;
 }
 .btn:hover{
-  cursor: url(https://flyandflake.github.io/zerotrust/app/musical-christmas-lights/curs1.cur);
+  cursor: url(https://flyandflake.github.io/zerotrust/app/musical-christmas-lights/curs1.svg);
+  color: #fff;
 }
 .separator {
   font-weight: bold;
