@@ -44,6 +44,9 @@ ul {
   line-height: 1.5;
   cursor: pointer;
 }
+.btn:hover{
+  cursor: url(https://flyandflake.github.io/zerotrust/app/musical-christmas-lights/curs1.cur);
+}
 .separator {
   font-weight: bold;
   text-align: center;
