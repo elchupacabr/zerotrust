@@ -1,4 +1,5 @@
 #EXTM3U url-tvg="http://epg.it999.ru/epg2.xml.gz"
+#EXTM3U url-tvg="https://iptvx.one/epg/epg.xml.gz"
 #EXTINF:-1 tvg-id="146" tvg-logo="http://epg.it999.ru/img2/983.png",Первый HD
 #EXTBG: #333333
 https://cdn10.1internet.tv/dash-live12/streams/1tv/1tvdash.mpd
