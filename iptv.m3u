@@ -1,10 +1,10 @@
 #EXTM3U url-tvg="http://epg.it999.ru/epg2.xml.gz"
-#EXTM3U url-tvg="https://iptvx.one/epg/epg.xml.gz"
 #EXTINF:-1 tvg-id="146" tvg-logo="http://epg.it999.ru/img2/983.png",Первый HD
 #EXTBG: #333333
 https://cdn10.1internet.tv/dash-live12/streams/1tv/1tvdash.mpd
 #EXTINF:-1 tvg-id="711" tvg-logo="http://epg.it999.ru/img/711.png",Россия 1
-https://vgtrksmotrim.cdnvideo.ru/hls2/russia_hd/playlist_4.m3u8?md5=b4zlS07IC_xTS8fArgeGHA&e=1676826180&hls_proxy_host=70b013ca21e8364cd537747cf862272b
+#EXTBG: #c0392b
+http://iptv.ltk-lg.su:1234/3007
 #EXTINF:-1 tvg-id="162" tvg-logo="http://epg.it999.ru/img2/2001.png",НТВ HD
 https://ntv-hls-orig.cdnvideo.ru/ntv0_hd/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="427" tvg-logo="http://epg.it999.ru/img/427.png",Пятый канал
@@ -12,7 +12,7 @@ https://us.justv.org:8080/hls/5kanal/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9M
 #EXTINF:-1 tvg-id="zvezda" tvg-logo="http://epg.it999.ru/img2/405.png",Звезда HD
 https://tvchannelstream1.tvzvezda.ru/cdn/tvzvezda/playlist_hdhigh.m3u8
 #EXTINF:-1 tvg-id="1003" tvg-logo="http://epg.it999.ru/img/1003.png",Пятница!
-https://mix.streamsport.net:8080/hls/friday/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9Mi8xOS8yMDIzIDI6Mjc6MDkgUE0maGFzaF92YWx1ZT1yU01Wc3hqLzhIRWZsWCtIdkFPM2dBPT0mdmFsaWRtaW51dGVzPTE0NDAwMDAwMDAw
+http://flu.ttk.mx:9090/Pyatnica/index.m3u8
 #EXTINF:-1 tvg-id="rentv" tvg-logo="http://epg.it999.ru/img2/18.png",РЕН ТВ
 http://flu.ttk.mx:9090/REN_TV/index.m3u8?token=orh6o
 #EXTINF:-1 tvg-id="79" tvg-logo="http://epg.it999.ru/img2/79.png",СТС
@@ -28,7 +28,7 @@ http://flu.ttk.mx:9090/Dom_kino/index.m3u8?token=orh6o
 https://vgtrksmotrim.cdnvideo.ru/hls/russia_24/playlist_3.m3u8?md5=DjMON3GaD3NNu6asc2GaPg&e=1676828040&hls_proxy_host=70b013ca21e8364cd537747cf862272b
 #EXTINF:-1 tvg-id="2288" tvg-logo="http://epg.it999.ru/img2/2288.png",Суббота! HD
 https://bl.uma.media/live/317845/HLS/4614144_3/1/1/playlist.m3u8
-#EXTINF:-1  tvg-id="kinosemiya" tvg-logo="http://epg.it999.ru/img2/3297.png",Киносемья
+#EXTINF:-1  tvg-id="987" tvg-logo="http://epg.it999.ru/img2/3297.png",Киносемья
 #EXTGRP:📽️ Фильмовые
 http://flu.ttk.mx:9090/Kinosemia/index.m3u8?token=orh6o
 #EXTINF:-1 tvg-id="kinopremiera-hd" tvg-logo="http://epg.it999.ru/img2/566.png",Кинопремьера HD
