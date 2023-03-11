@@ -3,15 +3,16 @@
 }
 
 body {
-  margin: 0;
-  height: 100vh;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #161616;
-  color: #c5a880;
-  font-family: sans-serif;
+    margin: 0;
+    height: 100vh;
+    /* overflow: hidden; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #161616;
+    color: #c5a880;
+    font-family: sans-serif;
+    flex-wrap: wrap;
 }
 
 label {
@@ -42,10 +43,10 @@ ul {
   width: 300px;
   margin-bottom: 16px;
   line-height: 1.5;
-  cursor: pointer;
+  cursor: url(https://flyandflake.github.io/zerotrust/app/musical-christmas-lights/curs1.svg), pointer;
 }
 .btn:hover{
-  cursor: url(https://flyandflake.github.io/zerotrust/app/musical-christmas-lights/curs1.svg);
+  cursor: url(https://flyandflake.github.io/zerotrust/app/musical-christmas-lights/curs1.svg), pointer;
   color: #fff;
 }
 .separator {
