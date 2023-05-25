@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js'></script>
+<link rel="stylesheet" href="/style.css">
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v6.2.0/css/fontawesome.css'>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v6.2.0/css/all.css'>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    
+    
+</head>
+<body>
+    <div class="authorize">
+      <div class="authorize-left"></div>
+      <div class="authorize-right">
+        <h2>Авторизация</h2>
+        <form action="" class="forma">
+          <i class="fa fa-user"></i><input type="text" name="" class="ath-log" placeholder="Email">
+          <i class="fa fa-lock"></i><input type="password" name="" class="ath-log" placeholder="Пароль">
+      <button class="ath-btn">Войти</button>
+      <a href="#" id="link">Ещё нет аккаунта? Зарегистрируйтесь.</a>
+    </form>
+
+
+    <div class="mod" id="modal">
+           <div class="mod-content">
+        <div class="authorize">
+          <div class="authorize-left"></div>
+          <div class="authorize-right">
+            <h2>Регистрация</h2>
+            <form action="" class="forma">
+              <i class=" fas fa-user"></i><input type="text" name="" class="ath-log" placeholder="Email">
+              <i class=" fas fa-lock"></i><input type="password" name="" class="ath-log" placeholder="Пароль">
+          <button class="ath-btn">Регистрация</button>
+          <a href="#" id="btn">Уже есть аккаунт? Войти.</a>
+        </form>
+        </div>
+        </div>
+        <script>
+          $('#link').click(function () {
+              $("#modal").css("display", "block");
+          });
+          $('#btn').click(function () {
+              $("#modal").css("display", "none");
+          });
+  
+      </script>
+      </div>
+    </div>
+    
+  
+</body>
+</html>

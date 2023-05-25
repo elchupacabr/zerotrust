@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC:400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+*,
+*:after,
+*:before {
+margin: 0;
+padding: 0;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+-ms-box-sizing: border-box;
+-o-box-sizing: border-box;
+box-sizing: border-box;
+-webkit-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+-moz-user-select: none;
+user-select: none;
+cursor: default;
+
+}
+
+body{
+    background: linear-gradient(to left, #99ccff 0%, #ccffcc 100%);
+    font-family: 'Roboto', sans-serif;
+}
+.authorize{
+    width: 900px;
+    height: 450px;
+    margin: 15vh auto;
+    background-color: #fff;
+    display: flex;
+    border-radius: 5px;
+}
+.authorize-right > h2{
+    text-align: center;
+    margin: 10px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+}
+
+
+.authorize-left {
+    background: url('https://gas-kvas.com/uploads/posts/2023-02/1675489079_gas-kvas-com-p-fonovie-risunki-dlya-rabochego-stola-na-ve-49.jpg');
+    background-size: cover;
+    width: 450px;
+    border-radius: 5px 0px 0px 5px;
+}
+.authorize-right {
+    width: 450px;
+    background-color: #fff;
+    border-radius: 0px 5px 5px 0px;
+}
+.ath-log {
+
+    position: relative;
+  
+    width: 300px;
+    padding: 10px;
+    padding-left: 45px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 2px 2px 4px #d1d9e6, -2px -2px 4px #f9f9f9;
+    font-size: inherit;
+    line-height: inherit;
+
+  }
+  
+  .ath-btn {
+    position: relative;
+    top: 14px;
+    left: 0px;
+    width: 180px;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background: linear-gradient(120deg, darkorange, #d107e0, darkred, darkmagenta, darkmagenta, slateblue);
+    background-size: 400% 100%;
+    background-position: 100% 0%;
+    color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 4px #d1d9e6, -2px -2px 4px #f9f9f9;
+    font-size: inherit;
+    line-height: inherit;
+}
+  
+  .ath-btn:hover {
+    background-position: 0 0;
+  }
+  
+  .ath-btn:focus {
+    outline: none;
+  
+  }
+  .forma {
+    text-align: center;
+    margin: 0 auto;
+    top: 18%;
+    
+    position: relative;
+    vertical-align: middle;
+    font-family: 'Montserrat', sans-serif;
+  }  
+  .authorize-right > .forma > .fa-lock {
+    position: relative;
+    top: 60px;
+    right: 310px;
+    z-index: 1;
+    
+}
+.authorize-right > .forma > .fa-user {
+    position: relative;
+    left: 25px;
+    z-index: 1;
+    
+}
+.authorize-right > .forma > a {
+    position: absolute;
+    top: 274px;
+    left: 102px;
+    font-size: 12px;
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+.mod {
+    display: none; /* Hidden by default */
+    position: absolute; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background-color: transparent;
+    
+  }
+
+  .mod-content {
+   
+    margin: 0 auto;
+    
+    display: flex;
+    border-radius: 5px;
+}
+@media (min-width: 768px) and (max-width: 1024px){
+  body{
+background-repeat: no-repeat;
+background-size: 125%;
+  }
+  .authorize {
+    width: 600px;
+    height: 340px;
+    margin: 6vh auto;
+    background-color: #fff;
+    display: flex;
+    border-radius: 5px;
+}
+
+.authorize-right > .forma > .fa-user {
+  position: relative;
+  left: -138px;
+  top: 38px;
+  z-index: 1;
+}
+.authorize-right > .forma > .fa-lock {
+  position: relative;
+  top: 38px;
+  right: 135px;
+  z-index: 1;
+}
+.authorize-right > .forma > a {
+  position: absolute;
+  top: 256px;
+  left: 50px;
+  font-size: 12px;
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+.forma {
+  text-align: center;
+  margin: 0 auto;
+  top: 3%;
+  position: relative;
+  vertical-align: middle;
+  font-family: 'Montserrat', sans-serif;
+}
+
+}
+@media (min-width: 320px) and (max-width: 640px){
+ body{
+  background-size: 400% 400%;
+
+ }
+ .authorize {
+  width: 300px;
+  height: 400px;
+  margin: 25vh auto;
+  padding-left: 0px;
+  /* margin-right: 8px; */
+  background-color: #fff;
+  display: flex;
+  border-radius: 5px;
+}
+.authorize-left {
+  background: url('https://gas-kvas.com/uploads/posts/2023-02/1675489079_gas-kvas-com-p-fonovie-risunki-dlya-rabochego-stola-na-ve-49.jpg');
+  background-size: cover;
+  width: 150px;
+  /* margin-left: 15px; */
+  border-radius: 5px 0px 0px 5px;
+}
+.authorize-right {
+  width: 170px;
+  background-color: #fff;
+  border-radius: 0px 5px 5px 0px;
+}
+.ath-log {
+  position: relative;
+  width: 150px;
+  padding: 10px;
+  padding-left: 45px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  box-shadow: 2px 2px 4px #d1d9e6, -2px -2px 4px #f9f9f9;
+  font-size: inherit;
+  line-height: inherit;
+}
+.ath-btn {
+  position: relative;
+  top: 14px;
+  left: 0px;
+  width: 150px;
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background: linear-gradient(120deg, darkorange, #d107e0, darkred, darkmagenta, darkmagenta, slateblue);
+  background-size: 400% 100%;
+  background-position: 100% 0%;
+  color: rgb(255, 255, 255);
+  box-shadow: 2px 2px 4px #d1d9e6, -2px -2px 4px #f9f9f9;
+  font-size: inherit;
+  line-height: inherit;
+}
+.authorize-right > .forma > a {
+  position: absolute;
+  top: 240px;
+  left: 10px;
+  font-size: 12px;
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+.authorize-right > .forma > .fa-user {
+  position: relative;
+  left: -64px;
+  top: 38px;
+  z-index: 1;
+}
+.authorize-right > .forma > .fa-lock {
+  position: relative;
+  top: 38px;
+  right: 62px;
+  z-index: 1;
+}
+}
+
