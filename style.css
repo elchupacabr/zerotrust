@@ -153,7 +153,7 @@ body{
 @media (min-width: 768px) and (max-width: 1024px){
   body{
 background-repeat: no-repeat;
-background-size: 125%;
+background-size: 125% 400%;
   }
   .authorize {
     width: 600px;
@@ -201,31 +201,71 @@ background-size: 125%;
   background-size: 400% 400%;
 
  }
- .authorize {
+/**/
+.authorize {
   width: 300px;
   height: 400px;
-  margin: 25vh auto;
+  margin: 20vh auto;
   padding-left: 0px;
   /* margin-right: 8px; */
   background-color: #fff;
-  display: flex;
+  display: grid;
   border-radius: 5px;
+  flex-direction: row;
+  justify-content: center;
 }
 .authorize-left {
   background: url('https://gas-kvas.com/uploads/posts/2023-02/1675489079_gas-kvas-com-p-fonovie-risunki-dlya-rabochego-stola-na-ve-49.jpg');
   background-size: cover;
-  width: 150px;
+  width: 300px;
+  height: 150px;
   /* margin-left: 15px; */
   border-radius: 5px 0px 0px 5px;
+  /* z-index: 1; */
 }
 .authorize-right {
-  width: 170px;
-  background-color: #fff;
+  width: 300px;
+  height: 150px;
+  position: relative;
+  top: -140px;
+  background-color: transparent;
   border-radius: 0px 5px 5px 0px;
+}
+.authorize-right > h2 {
+  text-align: center;
+  margin: 10px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+  z-index: 1;
+  color: #fff;
+  position: relative;
+  top: 40px;
+}
+.forma {
+  text-align: center;
+  margin: 0 auto;
+  top: 45%;
+  position: relative;
+  vertical-align: middle;
+  font-family: 'Montserrat', sans-serif;
+}
+.authorize-right > .forma > .fa-user {
+  position: relative;
+  left: 32px;
+  top: 0px;
+  z-index: 1;
+}
+.authorize-right > .forma > .fa-lock {
+  position: relative;
+  top: 58px;
+  right: 250px;
+  z-index: 1;
 }
 .ath-log {
   position: relative;
-  width: 150px;
+  width: 245px;
   padding: 10px;
   padding-left: 45px;
   margin: 10px;
@@ -236,45 +276,23 @@ background-size: 125%;
   font-size: inherit;
   line-height: inherit;
 }
-.ath-btn {
-  position: relative;
-  top: 14px;
-  left: 0px;
-  width: 150px;
-  padding: 10px;
-  margin: 10px;
-  border: none;
-  border-radius: 5px;
-  outline: none;
-  background: linear-gradient(120deg, darkorange, #d107e0, darkred, darkmagenta, darkmagenta, slateblue);
-  background-size: 400% 100%;
-  background-position: 100% 0%;
-  color: rgb(255, 255, 255);
-  box-shadow: 2px 2px 4px #d1d9e6, -2px -2px 4px #f9f9f9;
-  font-size: inherit;
-  line-height: inherit;
-}
 .authorize-right > .forma > a {
   position: absolute;
-  top: 240px;
-  left: 10px;
+  top: 200px;
+  left: 28px;
   font-size: 12px;
   color: #007bff;
   text-decoration: none;
-  background-color: transparent;
+  background-color: #fff;
   -webkit-text-decoration-skip: objects;
 }
-.authorize-right > .forma > .fa-user {
-  position: relative;
-  left: -64px;
-  top: 38px;
-  z-index: 1;
+.mod-content {
+  margin: 0px auto;
+  
+  border-radius: 5px;
 }
-.authorize-right > .forma > .fa-lock {
-  position: relative;
-  top: 38px;
-  right: 62px;
-  z-index: 1;
+.mod{
+  position: fixed;
 }
 }
 
