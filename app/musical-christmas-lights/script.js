@@ -116,11 +116,11 @@ function loadAudio(i) {
     "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Dott/This_Christmas/Dott_-_01_-_This_Christmas.mp3",
     "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/ccCommunity/TRG_Banks/TRG_Banks_Christmas_Album/TRG_Banks_-_12_-_No_room_at_the_inn.mp3",
     "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/ccCommunity/Mark_Smeby/En_attendant_Nol/Mark_Smeby_-_07_-_Jingle_Bell_Swing.mp3",
-    "https://flyandflake.github.io/zerotrust/src/audio/bobby-helms-jingle-bell-rock.mp3",
-	"https://flyandflake.github.io/zerotrust/src/audio/dean-martin-let-it-snow.mp3",
-	"https://flyandflake.github.io/zerotrust/src/audio/ljapis_trubeckoj_-_kapital_(z2.fm).mp3",
-     "https://flyandflake.github.io/zerotrust/src/audio/Wham_-_last_christmas_I_gave_you_my_heart_69115778.mp3",
-   "https://flyandflake.github.io/zerotrust/src/audio/Brenda_Lee_-_Rockin_Around_The_Christmas_Tree_47935651.mp3",
+    "https://elchupacabr.github.io/zerotrust/src/audio/bobby-helms-jingle-bell-rock.mp3",
+	"https://elchupacabr.github.io/zerotrust/src/audio/dean-martin-let-it-snow.mp3",
+	"https://elchupacabr.github.io/zerotrust/src/audio/ljapis_trubeckoj_-_kapital_(z2.fm).mp3",
+     "https://elchupacabr.github.io/zerotrust/src/audio/Wham_-_last_christmas_I_gave_you_my_heart_69115778.mp3",
+   "https://elchupacabr.github.io/zerotrust/src/audio/Brenda_Lee_-_Rockin_Around_The_Christmas_Tree_47935651.mp3",
  ];
   const file = files[i];
 
