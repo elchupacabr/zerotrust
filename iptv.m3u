@@ -67,3 +67,140 @@ https://ntv-hls-orig.cdnvideo.ru/th_pravo/index.m3u8
 #EXTINF:0 tvg-id="ntv-style" tvg-logo="http://epg.it999.ru/img2/1755.png",НТВ Стиль
 #EXTGRP:🇷🇺 Эфирные
 https://ntv-hls-orig.cdnvideo.ru/th_style/index.m3u8
+#EXTM3U ext_archive="&utcstart={start_time}&utcend={end_time}" archive_day="3" url-tvg="http://iptvx.one/epg/epg.xml.gz"  url-content="https://a-media.one/content-user-style/insert.php"
+#EXT-X-SESSION-DATA:DATA-ID="com.a-ru.client"
+
+
+#EXTINF:-1 tvg-logo="https://dvb.by/sources/logos/3990s.png"group-title="Фильмы" ,Russian Extreme HD
+#EXTVLCOPT:http-user-agent=WINK/1.28.2 (AndroidTV/11) HlsWinkPlayer
+http://a775797448-zabava-htlive.cdn.ngenix.net/hls/CH_RUSSIANEXTREMEULTRA/video_1920x1080_avc1/playlist.m3u8
+
+
+#EXTINF:-1 group-title="Фильмы",Viju TV 1000
+http://91.205.199.3:80/tv1000/index.m3u8
+#EXTINF:-1 group-title="Фильмы",Viju TV 1000 Action
+http://91.205.199.3:80/tv1000action/index.m3u8
+
+#EXTINF:-1 group-title="Фильмы",Viju Megahit HD
+http://hls127.homeiptv.org:8880/ViP_Megahit/video.m3u8
+
+#EXTINF:-1 group-title="Фильмы",Viju+ Comedy HD
+http://91.205.199.3:80/vipcomedi/index.m3u8
+#EXTINF:-1 group-title="Фильмы",Viju Serial HD
+http://91.205.199.3/vipserialhd/index.m3u8
+
+#EXTINF:-1 group-title="Фильмы",VIJU PREMIERE HD
+http://135.181.115.81:8000/play/a01a/index.m3u8?token=livetv
+
+#EXTINF:-1 group-title="Фильмы",Viju TV1000 Русское HD
+https://stream1.cinerama.uz/1059/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="Фильмы",Bolt
+http://edge02.odtv.az/o4/mtvhits/playlist.m3u8
+#EXTINF:-1 group-title="Фильмы" ,Киноужас HD
+http://195.211.27.149:8887/8357/index.m3u8?token=test
+
+#EXTINF:-1 group-title="Фильмы" , MediaService HDR
+http://84.38.180.145:8080/Uhierjfk/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://dvb.by/sources/logos/6873s.png"group-title="Фильмы",Страх HD
+http://195.9.195.3:8080/hls/202127.m3u8
+#EXTINF:-1 tvg-logo="http://stb.fox-tv.fun/images/logo_chanel/STRASHNOEHD200.png" tvg-rec="1" catchup-type="shift" catchup_days="5" group-title="Фильмы",Страшное HD
+http://158.101.194.132:8080/channel/42c15d29/index.m3u8?q=5656d7c7c902657d3491c0330b58ec0e
+
+#EXTINF:-1 group-title="Фильмы",Kinoman HD
+http://45.159.74.13:80/Kinoman/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="Фильмы",СТРК HDR
+http://sochinskayatrk.ru/hdtv/hls/strc_hd/playlist.m3u8
+#EXTINF:-1 group-title="Фильмы",Русский бестселлер
+http://31.148.48.15:80/Russkiy_Bestseller/index.m3u8?token=test
+#EXTINF:-1 group-title="Фильмы",Мосфильм. Золотая коллекция
+http://135.181.115.81:8000/play/a011/index.m3u8?token=livetv
+#EXTINF:-1 group-title="Фильмы",Русский роман
+http://91.142.158.107:8092/play/25/index.m3u8
+
+#EXTINF:-1 group-title="Фильмы" tvg-logo="https://smarttv.816club.net/wp-content/uploads/2021/03/favicon.png", Твоё ТВ HD
+http://84.38.180.145:8080/tvoetv/index.m3u8
+#EXTINF:-1 group-title="Фильмы" tvg-logo="https://i.imgur.com/YfQEflM.png",SeriesTV HD
+https://hls.goodgame.ru/hls/186021.m3u8?|user-agent=rostik_tv
+
+#EXTINF:-1 group-title="Фильмы" tvg-logo="https://i.imgur.com/YfQEflM.png",Pro100TV
+https://sirius.greenhosting.ru/Pro100tvRu/video.m3u8
+
+#EXTINF:-1 group-title="Фильмы" tvg-logo="https://dvb.by/sources/logos/3562s.png",ФАНТАСТИКА HDR
+https://hls.goodgame.ru/hls/187241.m3u8?|user-agent=rostik_tv
+
+#EXTINF:-1 tvg-logo="https://pchelp24.com/wp-content/uploads/images/05(1).png" group-title="Фильмы", Твое ТВ Юмор HD
+http://tvoetv.space:8080/tvoetv_humor/index.m3u8 
+#EXTINF:-1 tvg-logo="https://pchelp24.com/wp-content/uploads/images/05(1).png" group-title="Фильмы",Кино 1 International
+http://kino-1.catcast.tv/content/38617/index.m3u8
+
+#EXTINF:-1 tvg-name="IPTVPLAY ФАНТАСТИКА HD" tvg-id="IPTVPLAYFANTASTIKA.tv" tvg-logo="http://bezbe.my1.ru/poster/tvplay.png" group-title="Фильмы",  ФАНТАСТИКА HD
+http://92.53.64.197:5050/IPTVPLAYFANTASTIKA.tv/video.m3u8?token=m3VIth-Rou_bM1
+#EXTINF:-1 tvg-name="IPTVPLAY ПАМЯТЬ HD" tvg-id="IPTVPLAYPAMYAT.tv" tvg-logo="http://bezbe.my1.ru/poster/tvplay.png" group-title="Фильмы",  ПАМЯТЬ HD
+http://92.53.64.197:5050/IPTVPLAYPAMYAT.tv/video.m3u8?token=m3VIth-Rou_bM1
+#EXTINF:-1 tvg-name="IPTVPLAY УЖАСТИК HD" tvg-id="IPTVPLAYUZHASTIK.tv" tvg-logo="http://bezbe.my1.ru/poster/tvplay.png" group-title="Фильмы",  УЖАСТИК HD
+http://92.53.64.197:5050/IPTVPLAYUZHASTIK.tv/video.m3u8?token=m3VIth-Rou_bM1
+#EXTINF:-1 tvg-name="IPTVPLAY PROMO HD" tvg-id="IPTVPLAYPROMO.tv" tvg-logo="http://bezbe.my1.ru/poster/tvplay.png" group-title="Фильмы",  PROMO HD
+http://92.53.64.197:5050/IPTVPLAYPROMO.tv/video.m3u8?token=m3VIth-Rou_bM1
+#EXTINF:-1 tvg-name="IPTVPLAY МультСказки HD" tvg-id="IPTVPLAYMultSkazki.tv" tvg-logo="http://bezbe.my1.ru/poster/tvplay.png" group-title="Фильмы",  МультСказки HD
+http://92.53.64.197:5050/IPTVPLAYMultSkazki.tv/video.m3u8?token=m3VIth-Rou_bM1
+
+#EXTINF:-1 group-title="Фильмы" tvg-logo="https://i.imgur.com/YfQEflM.png",FX
+https://stream01.vnet.am/Fox/mono.m3u8
+
+#EXTINF:-1 group-title="Фильмы" tvg-logo="https://i.imgur.com/YfQEflM.png",СитиЭдем - Детектив HDR
+https://autopilot.catcast.tv/content/41327/index.m3u8
+
+#EXTINF:-1 group-title="Фильмы" tvg-logo="https://i.imgur.com/YfQEflM.png",СитиЭдем - Комедия
+https://autopilot.catcast.tv/content/41331/index.m3u8
+#EXTINF:-1 group-title="Фильмы" tvg-logo="https://i.imgur.com/YfQEflM.png",СитиЭдем - Мистика HDR
+https://autopilot.catcast.tv/content/40783/index.m3u8?bw943199057684.m3u8
+#EXTINF:-1 group-title="Фильмы" tvg-logo="https://i.imgur.com/YfQEflM.png",СитиЭдем - Экшен HDR
+https://autopilot.catcast.tv/content/41333/index.m3u8?bw943199057684.m3u8
+
+#EXTINF:-1 group-title="Фильмы",Кинопремьера HD
+https://stream1.cinerama.uz/1207/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="Фильмы",КиноХит HD
+rtmp://5.182.229.90//7250
+
+#EXTINF:-1 group-title="Фильмы",Киносвидание HD
+rtmp://5.182.229.90//7245
+
+#EXTINF:-1 group-title="Фильмы",Кинокомедия HD
+rtmp://5.182.229.90//7248
+#EXTINF:-1 group-title="Фильмы",Комедийное HD
+http://135.181.115.81:8000/play/a00j/index.m3u8?token=livetv
+
+#EXTINF:-1 group-title="Фильмы",Киномикс HD
+http://hls127.homeiptv.org:8880/Kinomix_HD/video.m3u8
+
+#EXTINF:-1 group-title="Фильмы",КИНОСЕРИЯ HD
+http://hls127.homeiptv.org:8880/Kinoseriya_HD/video.m3u8
+
+#EXTINF:-1 group-title="Фильмы",Киносемья HD
+rtmp://5.182.229.90//7244
+
+#EXTINF:-1 group-title="Фильмы",Мужское кино
+https://stream1.cinerama.uz/1237/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 taurer-id="1432" tvg-id="" tvg-name="ACM" tvg-logo="https://files.taurer.org/iptv_content/assets/ru/ACM_TEMP.png" group-title="Фильмы",ACM
+http://jordan.a-media.one:80/y5XncyChNN/ffgX5uE49B/24.m3u8
+
+#EXTINF:-1 taurer-id="3141" tvg-id="" tvg-name="On-Air Free. Жуки" tvg-logo="https://files.taurer.org/iptv_content/assets/ru/ONAIRZ_TEMP.png" group-title="Фильмы",On-Air Free. Жуки
+http://jordan.a-media.one:80/y5XncyChNN/ffgX5uE49B/9.m3u8
+
+#EXTINF:-1 taurer-id="7181" tvg-id="" tvg-name="On-Air Free. Ткачевы на связи" tvg-logo="https://files.taurer.org/iptv_content/assets/ru/TKACHEVY_TEMP.png" group-title="Фильмы",On-Air Free. Ткачевы на связи
+http://jordan.a-media.one:80/y5XncyChNN/ffgX5uE49B/11.m3u8
+
+#EXTINF:-1 taurer-id="9201" tvg-id="" tvg-name="On-Air Free. Игры 2024" tvg-logo="https://files.taurer.org/iptv_content/assets/ru/IGRY_TEMP.png" group-title="Фильмы",On-Air Free. Игры 2024
+http://jordan.a-media.one:80/y5XncyChNN/ffgX5uE49B/12.m3u8
+
+#EXTINF:-1 taurer-id="1222" tvg-id="" tvg-name="On-Air Free. Просто Михалыч" tvg-logo="https://files.taurer.org/iptv_content/assets/ru/MICHALYCH_TEMP.png" group-title="Фильмы",On-Air Free. Просто Михалыч
+http://jordan.a-media.one:80/y5XncyChNN/ffgX5uE49B/15.m3u8
+
+#EXTINF:-1 taurer-id="8765" tvg-id="" tvg-name="Alpha Cinema" tvg-logo="https://files.taurer.org/iptv_content/assets/ru/AC_TEMP.png" group-title="Фильмы",Alpha Cinema
+http://jordan.a-media.one:80/y5XncyChNN/ffgX5uE49B/32.m3u8
+
+
