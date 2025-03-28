@@ -1,1 +1,2 @@
-## Главная [(https://elchupacabr.github.io/zerotrust)]
+## Главная
+[Ссылка](https://elchupacabr.github.io/zerotrust)
