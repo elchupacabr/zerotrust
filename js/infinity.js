@@ -34,7 +34,12 @@ const SOURCES = [
   'https://unsplash.it/3000/2000/?gravity=center',
   'https://unsplash.it/3728/2481/?random',
   
-
+ 'https://randart.ru/art/JD99/wallpapers/?v=1',
+        'https://loremflickr.com/1920/1080/landscape',
+        'https://randart.ru/art/JD99/wallpapers/',
+        'https://loremflickr.com/1920/1080/nature',
+        'https://randart.ru/art/JD99/wallpapers/?v=1',
+        'https://loremflickr.com/1920/1080/city'
 ];
 
 // Рабочий массив изображений. Изначально пуст.
