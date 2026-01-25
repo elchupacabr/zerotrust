@@ -42,13 +42,8 @@ img {
 }
 
 .block:active {
-    -moz-transform: rotate(9720deg);
-    -webkit-transform: rotate(9720deg);
-    -o-transform: rotate(9720deg);
-    -ms-transform: rotate(9720deg);
-    transform: rotate(9720deg);
-
-}
+            transform: rotate(9720deg);
+        }
 
 .container {
     display: flex;
