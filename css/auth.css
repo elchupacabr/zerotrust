@@ -15,27 +15,17 @@ body {
 }
 
 .block {
-    border: none;
-    float: left;
-    width: 67px;
-    height: 67px;
-    margin-right: 5px;
-    -moz-transition: all 0.8s linear;
-    -webkit-transition: all 0.8s linear;
-    -o-transition: all 0.8s linear;
-    -ms-transition: all 0.8s linear;
-    transition: all 0.8s linear;
-    background-color: transparent;
-    background-size: 90%;
-    background-repeat: no-repeat;
-    background-image: url(../img/transparent.png);
-    background-position: center;
     position: fixed;
     top: 15px;
     left: 10px;
-
-
+    width: 67px;
+    height: 67px;
+    background-image: url(../img/transparent.png);
+    background-color: transparent; /* оставляем флюгер */
+    z-index: 9999; /* выше всего остального */
+    cursor: pointer;
 }
+
 
 
 img {
