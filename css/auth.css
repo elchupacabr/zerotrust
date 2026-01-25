@@ -7,6 +7,10 @@
 	font-family: Raleway, sans-serif;
 	overflow: hidden;
 }
+body{
+	background-size: cover;
+background-repeat: no-repeat;
+}
 
 .block {
 	border: none;
