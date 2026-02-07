@@ -1,2 +1,0 @@
-- name: Cloudflare Pages GitHub Action
-  uses: cloudflare/pages-action@v1.5.0
